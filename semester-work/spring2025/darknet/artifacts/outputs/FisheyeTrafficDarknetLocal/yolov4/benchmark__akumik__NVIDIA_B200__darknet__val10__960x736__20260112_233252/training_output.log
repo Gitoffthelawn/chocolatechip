@@ -1,0 +1,27 @@
+Darknet V5 "Moonlit" v5.0-158-gb0e55463 [feature/map-reporting-fixes-superclean]
+CUDA runtime version 12080 (v12.8), driver version 12080 (v12.8)
+cuDNN version 12080 (v9.7.0), use of half-size floats is ENABLED
+=> 0: NVIDIA B200 [#10.0], 178.4 GiB
+OpenCV 4.6.0, Ubuntu 24.04, docker
+CUDA status error: /host_workspace/darknet/src-lib/dark_cuda.cpp, cuda_set_device(), line #29
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Error location: /host_workspace/darknet/src-lib/dark_cuda.cpp, cuda_set_device(), line #29
+* Error message:  current CUDA error: status=46 cudaErrorDevicesUnavailable: CUDA-capable device(s) is/are busy or unavailable
+* Thread #22761880965120: main darknet thread
+* Version "Moonlit" v5.0-158-gb0e55463 built on Jan 12 2026 23:11:25
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+backtrace (8 entries):
+1/8: /host_workspace/darknet/build/src-cli/darknet(_Z13log_backtracev+0x38) [0x55cfbca13248]
+2/8: /host_workspace/darknet/build/src-cli/darknet(_Z19darknet_fatal_errorPKcS0_iS0_z+0x70e) [0x55cfbca157ee]
+3/8: /host_workspace/darknet/build/src-cli/darknet(+0xb2d75) [0x55cfbc8bcd75]
+4/8: /host_workspace/darknet/build/src-cli/darknet(_Z25check_cuda_error_extended9cudaErrorPKcS1_i+0xec) [0x55cfbc8bcedc]
+5/8: /host_workspace/darknet/build/src-cli/darknet(main+0x135) [0x55cfbc849b25]
+6/8: /lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x14b3e882a1ca]
+7/8: /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x14b3e882a28b]
+8/8: /host_workspace/darknet/build/src-cli/darknet(_start+0x25) [0x55cfbc84cc05]
+
+known threads:  1
+1/1: #22761880965120: main darknet thread
+
