@@ -1,0 +1,8 @@
+{
+  "backend": "darknet",
+  "weights": "/workspace/.cache/splits/combined_best.weights",
+  "n_images": 2887,
+  "total_s": 152.2963344550226,
+  "mean_s": 0.052752453915837404,
+  "fps": 18.95646412194256
+}
