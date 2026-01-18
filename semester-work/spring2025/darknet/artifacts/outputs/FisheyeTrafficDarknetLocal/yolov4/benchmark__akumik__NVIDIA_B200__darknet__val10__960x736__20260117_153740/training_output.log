@@ -1,0 +1,1021 @@
+Darknet V5 "Moonlit" v5.0-158-gb0e55463 [feature/map-reporting-fixes-superclean]
+CUDA runtime version 12080 (v12.8), driver version 12080 (v12.8)
+cuDNN version 12080 (v9.7.0), use of half-size floats is ENABLED
+=> 0: NVIDIA B200 [#10.0], 178.4 GiB
+OpenCV 4.6.0, Ubuntu 24.04, docker
+0
+Prepare additional network for mAP calculation...
+0: compute_capability=1000, cudnn_half=1, GPU=NVIDIA B200
+Allocating workspace to transfer between CPU and GPU:  64.7 MiB
+0: compute_capability=1000, cudnn_half=1, GPU=NVIDIA B200
+Allocating workspace to transfer between CPU and GPU:  4.3 GiB
+Learning Rate: 0.001300, Momentum: 0.949000, Decay: 0.000500
+Detection layer #139 is type 17 (yolo)
+Detection layer #150 is type 17 (yolo)
+Detection layer #161 is type 17 (yolo)
+mAP calculations will be every 406 iterations
+weights will be saved every 1000 iterations
+Using 112 threads to prime loading 25984 images.
+-> loading image 1399/25984 (5%) in 977.645 milliseconds         -> loading image 1847/25984 (7%) in 1.311 seconds         -> loading image 2364/25984 (9%) in 1.644 seconds         -> loading image 2837/25984 (11%) in 1.977 seconds         -> loading image 3317/25984 (13%) in 2.310 seconds         -> loading image 3789/25984 (15%) in 2.643 seconds         -> loading image 4257/25984 (16%) in 2.976 seconds         -> loading image 4736/25984 (18%) in 3.309 seconds         -> loading image 5211/25984 (20%) in 3.642 seconds         -> loading image 5691/25984 (22%) in 3.975 seconds         -> loading image 6173/25984 (24%) in 4.308 seconds         -> loading image 6608/25984 (25%) in 4.641 seconds         -> loading image 7112/25984 (27%) in 4.975 seconds         -> loading image 7594/25984 (29%) in 5.308 seconds         -> loading image 8028/25984 (31%) in 5.641 seconds         -> loading image 8546/25984 (33%) in 5.974 seconds         -> loading image 9018/25984 (35%) in 6.307 seconds         -> loading image 9491/25984 (37%) in 6.640 seconds         -> loading image 9969/25984 (38%) in 6.973 seconds         -> loading image 10442/25984 (40%) in 7.307 seconds         -> loading image 10905/25984 (42%) in 7.641 seconds         -> loading image 11410/25984 (44%) in 7.974 seconds         -> loading image 11870/25984 (46%) in 8.307 seconds         -> loading image 12363/25984 (48%) in 8.640 seconds         -> loading image 12788/25984 (49%) in 8.973 seconds         -> loading image 13298/25984 (51%) in 9.306 seconds         -> loading image 13771/25984 (53%) in 9.639 seconds         -> loading image 14250/25984 (55%) in 9.972 seconds         -> loading image 14721/25984 (57%) in 10.305 seconds         -> loading image 15197/25984 (58%) in 10.638 seconds         -> loading image 15674/25984 (60%) in 10.971 seconds         -> loading image 16132/25984 (62%) in 11.304 seconds         -> loading image 16625/25984 (64%) in 11.637 seconds         -> loading image 17111/25984 (66%) in 11.970 seconds         -> loading image 17577/25984 (68%) in 12.304 seconds         -> loading image 18011/25984 (69%) in 12.637 seconds         -> loading image 18525/25984 (71%) in 12.970 seconds         -> loading image 19002/25984 (73%) in 13.303 seconds         -> loading image 19495/25984 (75%) in 13.636 seconds         -> loading image 19950/25984 (77%) in 13.969 seconds         -> loading image 20428/25984 (79%) in 14.302 seconds         -> loading image 20922/25984 (81%) in 14.637 seconds         -> loading image 21394/25984 (82%) in 14.971 seconds         -> loading image 21870/25984 (84%) in 15.304 seconds         -> loading image 22340/25984 (86%) in 15.640 seconds         -> loading image 22801/25984 (88%) in 15.974 seconds         -> loading image 23291/25984 (90%) in 16.307 seconds         -> loading image 23752/25984 (91%) in 16.640 seconds         -> loading image 24245/25984 (93%) in 16.973 seconds         -> loading image 24694/25984 (95%) in 17.306 seconds         -> loading image 25178/25984 (97%) in 17.639 seconds         -> loading image 25642/25984 (99%) in 17.972 seconds         -> loading image 25984/25984 (100%) in 18.305 seconds         
+-> loaded 25984 images in 18.305 seconds
+-> done with the 112 image prime threads
+Resizing, random_coef=1.400000, batch=4, 1376x1056
+Creating 6 permanent CPU threads to load images and bounding boxes.
+GPU #0: allocating workspace: 16.6 GiB begins at 0x14834e000000
+1: loss=7348.917, avg loss=7348.917, last=none, best=none, next=1000, rate=0.00000000, load 64=563.9 milliseconds, train=5.5 seconds, 64 images, time remaining=26.7 hours
+2: loss=7350.836, avg loss=7349.108, last=none, best=none, next=1000, rate=0.00000000, load 64=562.4 milliseconds, train=5.2 seconds, 128 images, time remaining=18.9 hours
+3: loss=7356.086, avg loss=7349.806, last=none, best=none, next=1000, rate=0.00000000, load 64=420.3 milliseconds, train=5.1 seconds, 192 images, time remaining=16.3 hours
+4: loss=7349.765, avg loss=7349.802, last=none, best=none, next=1000, rate=0.00000000, load 64=458.4 milliseconds, train=5.1 seconds, 256 images, time remaining=15.5 hours
+5: loss=7350.829, avg loss=7349.904, last=none, best=none, next=1000, rate=0.00000000, load 64=445.2 milliseconds, train=5.1 seconds, 320 images, time remaining=14.7 hours
+6: loss=7360.634, avg loss=7350.977, last=none, best=none, next=1000, rate=0.00000000, load 64=397.1 milliseconds, train=5.2 seconds, 384 images, time remaining=14.1 hours
+7: loss=7351.742, avg loss=7351.053, last=none, best=none, next=1000, rate=0.00000000, load 64=451.5 milliseconds, train=5.2 seconds, 448 images, time remaining=13.6 hours
+8: loss=7346.608, avg loss=7350.608, last=none, best=none, next=1000, rate=0.00000000, load 64=411.1 milliseconds, train=5.1 seconds, 512 images, time remaining=13.3 hours
+9: loss=7350.771, avg loss=7350.625, last=none, best=none, next=1000, rate=0.00000000, load 64=423.9 milliseconds, train=5.1 seconds, 576 images, time remaining=13.1 hours
+10: loss=7351.081, avg loss=7350.670, last=none, best=none, next=1000, rate=0.00000000, load 64=530.5 milliseconds, train=5.1 seconds, 640 images, time remaining=13.1 hours
+Resizing, random_coef=1.40, batch=4, 896x672
+GPU #0: allocating workspace: 4.3 GiB begins at 0x148660000000
+11: loss=3069.953, avg loss=6922.598, last=none, best=none, next=1000, rate=0.00000000, load 64=409.5 milliseconds, train=1.9 seconds, 704 images, time remaining=12.3 hours
+12: loss=3062.266, avg loss=6536.565, last=none, best=none, next=1000, rate=0.00000000, load 64=413.1 milliseconds, train=1.8 seconds, 768 images, time remaining=11.6 hours
+13: loss=3061.981, avg loss=6189.106, last=none, best=none, next=1000, rate=0.00000000, load 64=364.8 milliseconds, train=1.8 seconds, 832 images, time remaining=11.1 hours
+14: loss=3059.650, avg loss=5876.161, last=none, best=none, next=1000, rate=0.00000000, load 64=415.0 milliseconds, train=1.8 seconds, 896 images, time remaining=10.6 hours
+15: loss=3065.091, avg loss=5595.054, last=none, best=none, next=1000, rate=0.00000000, load 64=399.7 milliseconds, train=1.8 seconds, 960 images, time remaining=10.1 hours
+16: loss=3066.528, avg loss=5342.201, last=none, best=none, next=1000, rate=0.00000000, load 64=451.6 milliseconds, train=1.8 seconds, 1024 images, time remaining=9.7 hours
+17: loss=3063.953, avg loss=5114.376, last=none, best=none, next=1000, rate=0.00000000, load 64=420.1 milliseconds, train=1.8 seconds, 1088 images, time remaining=9.4 hours
+18: loss=3061.986, avg loss=4909.137, last=none, best=none, next=1000, rate=0.00000000, load 64=299.5 milliseconds, train=1.9 seconds, 1152 images, time remaining=9.1 hours
+19: loss=3059.478, avg loss=4724.171, last=none, best=none, next=1000, rate=0.00000000, load 64=372.6 milliseconds, train=1.9 seconds, 1216 images, time remaining=8.9 hours
+20: loss=3065.640, avg loss=4558.318, last=none, best=none, next=1000, rate=0.00000000, load 64=399.2 milliseconds, train=1.8 seconds, 1280 images, time remaining=8.6 hours
+Resizing, random_coef=1.40, batch=4, 1184x928
+GPU #0: allocating workspace: 16.6 GiB begins at 0x148352000000
+21: loss=5556.057, avg loss=4658.092, last=none, best=none, next=1000, rate=0.00000000, load 64=432.2 milliseconds, train=3.9 seconds, 1344 images, time remaining=9 hours
+22: loss=5551.853, avg loss=4747.468, last=none, best=none, next=1000, rate=0.00000000, load 64=551.6 milliseconds, train=3.9 seconds, 1408 images, time remaining=9 hours
+23: loss=5550.437, avg loss=4827.765, last=none, best=none, next=1000, rate=0.00000000, load 64=392.0 milliseconds, train=3.9 seconds, 1472 images, time remaining=9 hours
+24: loss=5548.679, avg loss=4899.856, last=none, best=none, next=1000, rate=0.00000000, load 64=435.9 milliseconds, train=3.9 seconds, 1536 images, time remaining=9 hours
+25: loss=5544.808, avg loss=4964.351, last=none, best=none, next=1000, rate=0.00000000, load 64=672.9 milliseconds, train=3.9 seconds, 1600 images, time remaining=8.9 hours
+26: loss=5538.996, avg loss=5021.815, last=none, best=none, next=1000, rate=0.00000000, load 64=435.2 milliseconds, train=3.9 seconds, 1664 images, time remaining=8.9 hours
+27: loss=5525.212, avg loss=5072.155, last=none, best=none, next=1000, rate=0.00000000, load 64=411.1 milliseconds, train=3.9 seconds, 1728 images, time remaining=8.9 hours
+28: loss=5517.647, avg loss=5116.704, last=none, best=none, next=1000, rate=0.00000000, load 64=406.0 milliseconds, train=3.9 seconds, 1792 images, time remaining=8.9 hours
+29: loss=5508.153, avg loss=5155.849, last=none, best=none, next=1000, rate=0.00000000, load 64=370.9 milliseconds, train=3.9 seconds, 1856 images, time remaining=8.9 hours
+30: loss=5502.060, avg loss=5190.470, last=none, best=none, next=1000, rate=0.00000000, load 64=397.0 milliseconds, train=3.9 seconds, 1920 images, time remaining=8.9 hours
+Resizing, random_coef=1.40, batch=4, 736x576
+GPU #0: allocating workspace: 319.6 MiB begins at 0x1483d5800000
+31: loss=2135.089, avg loss=4884.932, last=none, best=none, next=1000, rate=0.00000000, load 64=407.3 milliseconds, train=1.2 seconds, 1984 images, time remaining=8.7 hours
+32: loss=2130.531, avg loss=4609.492, last=none, best=none, next=1000, rate=0.00000000, load 64=491.0 milliseconds, train=1.2 seconds, 2048 images, time remaining=8.5 hours
+33: loss=2122.144, avg loss=4360.757, last=none, best=none, next=1000, rate=0.00000000, load 64=410.4 milliseconds, train=1.2 seconds, 2112 images, time remaining=8.3 hours
+34: loss=2114.569, avg loss=4136.138, last=none, best=none, next=1000, rate=0.00000000, load 64=364.7 milliseconds, train=1.2 seconds, 2176 images, time remaining=8.1 hours
+35: loss=2107.320, avg loss=3933.256, last=none, best=none, next=1000, rate=0.00000000, load 64=425.8 milliseconds, train=1.2 seconds, 2240 images, time remaining=8 hours
+36: loss=2094.908, avg loss=3749.421, last=none, best=none, next=1000, rate=0.00000000, load 64=338.8 milliseconds, train=1.2 seconds, 2304 images, time remaining=7.9 hours
+37: loss=2083.724, avg loss=3582.852, last=none, best=none, next=1000, rate=0.00000000, load 64=419.7 milliseconds, train=1.2 seconds, 2368 images, time remaining=7.7 hours
+38: loss=2080.756, avg loss=3432.642, last=none, best=none, next=1000, rate=0.00000000, load 64=450.4 milliseconds, train=1.2 seconds, 2432 images, time remaining=7.6 hours
+39: loss=2064.492, avg loss=3295.827, last=none, best=none, next=1000, rate=0.00000000, load 64=364.2 milliseconds, train=1.2 seconds, 2496 images, time remaining=7.5 hours
+40: loss=2050.695, avg loss=3171.313, last=none, best=none, next=1000, rate=0.00000000, load 64=399.9 milliseconds, train=1.2 seconds, 2560 images, time remaining=7.4 hours
+Resizing, random_coef=1.40, batch=4, 864x672
+GPU #0: allocating workspace: 434.4 MiB begins at 0x1486a1400000
+41: loss=2780.579, avg loss=3132.240, last=none, best=none, next=1000, rate=0.00000000, load 64=385.0 milliseconds, train=1.7 seconds, 2624 images, time remaining=7.3 hours
+42: loss=2763.342, avg loss=3095.350, last=none, best=none, next=1000, rate=0.00000000, load 64=376.8 milliseconds, train=1.6 seconds, 2688 images, time remaining=7.3 hours
+43: loss=2737.463, avg loss=3059.561, last=none, best=none, next=1000, rate=0.00000000, load 64=422.3 milliseconds, train=1.7 seconds, 2752 images, time remaining=7.1 hours
+44: loss=2716.419, avg loss=3025.247, last=none, best=none, next=1000, rate=0.00000000, load 64=466.2 milliseconds, train=1.6 seconds, 2816 images, time remaining=7.1 hours
+45: loss=2683.964, avg loss=2991.119, last=none, best=none, next=1000, rate=0.00000001, load 64=361.0 milliseconds, train=1.6 seconds, 2880 images, time remaining=7 hours
+46: loss=2656.816, avg loss=2957.688, last=none, best=none, next=1000, rate=0.00000001, load 64=466.5 milliseconds, train=1.6 seconds, 2944 images, time remaining=6.9 hours
+47: loss=2631.262, avg loss=2925.045, last=none, best=none, next=1000, rate=0.00000001, load 64=384.5 milliseconds, train=1.6 seconds, 3008 images, time remaining=6.9 hours
+48: loss=2600.945, avg loss=2892.635, last=none, best=none, next=1000, rate=0.00000001, load 64=390.4 milliseconds, train=1.6 seconds, 3072 images, time remaining=6.8 hours
+49: loss=2564.222, avg loss=2859.794, last=none, best=none, next=1000, rate=0.00000001, load 64=450.6 milliseconds, train=1.6 seconds, 3136 images, time remaining=6.7 hours
+50: loss=2525.255, avg loss=2826.340, last=none, best=none, next=1000, rate=0.00000001, load 64=457.6 milliseconds, train=1.6 seconds, 3200 images, time remaining=6.7 hours
+Resizing, random_coef=1.40, batch=4, 1216x928
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+51: loss=4809.214, avg loss=3024.627, last=none, best=none, next=1000, rate=0.00000001, load 64=437.3 milliseconds, train=3.9 seconds, 3264 images, time remaining=6.8 hours
+52: loss=4721.338, avg loss=3194.298, last=none, best=none, next=1000, rate=0.00000001, load 64=433.4 milliseconds, train=3.9 seconds, 3328 images, time remaining=6.9 hours
+53: loss=4640.624, avg loss=3338.931, last=none, best=none, next=1000, rate=0.00000001, load 64=387.2 milliseconds, train=3.9 seconds, 3392 images, time remaining=6.9 hours
+54: loss=4534.688, avg loss=3458.506, last=none, best=none, next=1000, rate=0.00000001, load 64=531.2 milliseconds, train=3.9 seconds, 3456 images, time remaining=6.9 hours
+55: loss=4426.323, avg loss=3555.288, last=none, best=none, next=1000, rate=0.00000001, load 64=433.0 milliseconds, train=4.0 seconds, 3520 images, time remaining=7 hours
+56: loss=4309.136, avg loss=3630.673, last=none, best=none, next=1000, rate=0.00000001, load 64=387.9 milliseconds, train=3.9 seconds, 3584 images, time remaining=7 hours
+57: loss=4177.134, avg loss=3685.319, last=none, best=none, next=1000, rate=0.00000001, load 64=393.3 milliseconds, train=3.9 seconds, 3648 images, time remaining=7 hours
+58: loss=4032.305, avg loss=3720.017, last=none, best=none, next=1000, rate=0.00000001, load 64=426.9 milliseconds, train=3.9 seconds, 3712 images, time remaining=7.1 hours
+59: loss=3905.420, avg loss=3738.557, last=none, best=none, next=1000, rate=0.00000002, load 64=425.2 milliseconds, train=3.9 seconds, 3776 images, time remaining=7.1 hours
+60: loss=3732.202, avg loss=3737.922, last=none, best=none, next=1000, rate=0.00000002, load 64=386.4 milliseconds, train=3.9 seconds, 3840 images, time remaining=7.1 hours
+Resizing, random_coef=1.40, batch=4, 736x576
+GPU #0: allocating workspace: 319.6 MiB begins at 0x148738400000
+61: loss=1353.876, avg loss=3499.517, last=none, best=none, next=1000, rate=0.00000002, load 64=353.6 milliseconds, train=1.2 seconds, 3904 images, time remaining=7.1 hours
+62: loss=1292.761, avg loss=3278.841, last=none, best=none, next=1000, rate=0.00000002, load 64=349.5 milliseconds, train=1.2 seconds, 3968 images, time remaining=7 hours
+63: loss=1231.227, avg loss=3074.080, last=none, best=none, next=1000, rate=0.00000002, load 64=374.6 milliseconds, train=1.2 seconds, 4032 images, time remaining=6.9 hours
+64: loss=1172.948, avg loss=2883.967, last=none, best=none, next=1000, rate=0.00000002, load 64=465.8 milliseconds, train=1.2 seconds, 4096 images, time remaining=6.9 hours
+65: loss=1111.936, avg loss=2706.763, last=none, best=none, next=1000, rate=0.00000002, load 64=308.8 milliseconds, train=1.2 seconds, 4160 images, time remaining=6.8 hours
+66: loss=1052.726, avg loss=2541.360, last=none, best=none, next=1000, rate=0.00000002, load 64=315.8 milliseconds, train=1.2 seconds, 4224 images, time remaining=6.7 hours
+67: loss=1003.642, avg loss=2387.588, last=none, best=none, next=1000, rate=0.00000003, load 64=309.0 milliseconds, train=1.2 seconds, 4288 images, time remaining=6.7 hours
+68: loss=940.013, avg loss=2242.830, last=none, best=none, next=1000, rate=0.00000003, load 64=313.0 milliseconds, train=1.2 seconds, 4352 images, time remaining=6.6 hours
+69: loss=885.647, avg loss=2107.112, last=none, best=none, next=1000, rate=0.00000003, load 64=359.7 milliseconds, train=1.2 seconds, 4416 images, time remaining=6.5 hours
+70: loss=833.053, avg loss=1979.706, last=none, best=none, next=1000, rate=0.00000003, load 64=351.8 milliseconds, train=1.2 seconds, 4480 images, time remaining=6.5 hours
+Resizing, random_coef=1.40, batch=4, 1120x864
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+71: loss=1758.365, avg loss=1957.572, last=none, best=none, next=1000, rate=0.00000003, load 64=461.8 milliseconds, train=3.6 seconds, 4544 images, time remaining=6.6 hours
+72: loss=1679.440, avg loss=1929.759, last=none, best=none, next=1000, rate=0.00000003, load 64=405.6 milliseconds, train=3.6 seconds, 4608 images, time remaining=6.6 hours
+73: loss=1538.879, avg loss=1890.671, last=none, best=none, next=1000, rate=0.00000004, load 64=351.6 milliseconds, train=3.6 seconds, 4672 images, time remaining=6.7 hours
+74: loss=1402.944, avg loss=1841.898, last=none, best=none, next=1000, rate=0.00000004, load 64=412.2 milliseconds, train=3.6 seconds, 4736 images, time remaining=6.7 hours
+75: loss=1302.645, avg loss=1787.973, last=none, best=none, next=1000, rate=0.00000004, load 64=410.8 milliseconds, train=3.6 seconds, 4800 images, time remaining=6.7 hours
+76: loss=1164.967, avg loss=1725.672, last=none, best=none, next=1000, rate=0.00000004, load 64=441.0 milliseconds, train=3.6 seconds, 4864 images, time remaining=6.7 hours
+77: loss=1067.927, avg loss=1659.897, last=none, best=none, next=1000, rate=0.00000005, load 64=488.7 milliseconds, train=3.6 seconds, 4928 images, time remaining=6.7 hours
+78: loss=968.542, avg loss=1590.762, last=none, best=none, next=1000, rate=0.00000005, load 64=427.8 milliseconds, train=3.6 seconds, 4992 images, time remaining=6.7 hours
+79: loss=890.201, avg loss=1520.706, last=none, best=none, next=1000, rate=0.00000005, load 64=369.7 milliseconds, train=3.6 seconds, 5056 images, time remaining=6.7 hours
+80: loss=786.947, avg loss=1447.330, last=none, best=none, next=1000, rate=0.00000005, load 64=434.8 milliseconds, train=3.6 seconds, 5120 images, time remaining=6.8 hours
+Resizing, random_coef=1.40, batch=4, 928x736
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+81: loss=500.893, avg loss=1352.686, last=none, best=none, next=1000, rate=0.00000006, load 64=330.7 milliseconds, train=2.0 seconds, 5184 images, time remaining=6.7 hours
+82: loss=459.288, avg loss=1263.346, last=none, best=none, next=1000, rate=0.00000006, load 64=381.1 milliseconds, train=2.1 seconds, 5248 images, time remaining=6.7 hours
+83: loss=403.313, avg loss=1177.343, last=none, best=none, next=1000, rate=0.00000006, load 64=397.3 milliseconds, train=2.0 seconds, 5312 images, time remaining=6.7 hours
+84: loss=354.639, avg loss=1095.072, last=none, best=none, next=1000, rate=0.00000006, load 64=374.6 milliseconds, train=2.0 seconds, 5376 images, time remaining=6.6 hours
+85: loss=324.762, avg loss=1018.041, last=none, best=none, next=1000, rate=0.00000007, load 64=344.6 milliseconds, train=2.0 seconds, 5440 images, time remaining=6.6 hours
+86: loss=288.536, avg loss=945.091, last=none, best=none, next=1000, rate=0.00000007, load 64=353.6 milliseconds, train=2.0 seconds, 5504 images, time remaining=6.6 hours
+87: loss=263.392, avg loss=876.921, last=none, best=none, next=1000, rate=0.00000007, load 64=393.2 milliseconds, train=2.0 seconds, 5568 images, time remaining=6.6 hours
+88: loss=238.139, avg loss=813.043, last=none, best=none, next=1000, rate=0.00000008, load 64=300.8 milliseconds, train=2.0 seconds, 5632 images, time remaining=6.6 hours
+89: loss=216.659, avg loss=753.404, last=none, best=none, next=1000, rate=0.00000008, load 64=374.7 milliseconds, train=2.0 seconds, 5696 images, time remaining=6.5 hours
+90: loss=196.581, avg loss=697.722, last=none, best=none, next=1000, rate=0.00000009, load 64=359.3 milliseconds, train=2.0 seconds, 5760 images, time remaining=6.5 hours
+Resizing, random_coef=1.40, batch=4, 1184x928
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+91: loss=255.301, avg loss=653.480, last=none, best=none, next=1000, rate=0.00000009, load 64=391.6 milliseconds, train=3.9 seconds, 5824 images, time remaining=6.6 hours
+92: loss=220.157, avg loss=610.148, last=none, best=none, next=1000, rate=0.00000009, load 64=541.8 milliseconds, train=3.9 seconds, 5888 images, time remaining=6.6 hours
+93: loss=203.989, avg loss=569.532, last=none, best=none, next=1000, rate=0.00000010, load 64=407.2 milliseconds, train=3.9 seconds, 5952 images, time remaining=6.6 hours
+94: loss=190.595, avg loss=531.638, last=none, best=none, next=1000, rate=0.00000010, load 64=397.8 milliseconds, train=3.9 seconds, 6016 images, time remaining=6.7 hours
+95: loss=171.819, avg loss=495.656, last=none, best=none, next=1000, rate=0.00000011, load 64=420.3 milliseconds, train=3.9 seconds, 6080 images, time remaining=6.7 hours
+96: loss=149.845, avg loss=461.075, last=none, best=none, next=1000, rate=0.00000011, load 64=452.4 milliseconds, train=3.9 seconds, 6144 images, time remaining=6.7 hours
+97: loss=136.337, avg loss=428.601, last=none, best=none, next=1000, rate=0.00000012, load 64=478.3 milliseconds, train=3.9 seconds, 6208 images, time remaining=6.7 hours
+98: loss=122.128, avg loss=397.954, last=none, best=none, next=1000, rate=0.00000012, load 64=427.3 milliseconds, train=3.9 seconds, 6272 images, time remaining=6.7 hours
+99: loss=119.489, avg loss=370.107, last=none, best=none, next=1000, rate=0.00000012, load 64=414.1 milliseconds, train=3.9 seconds, 6336 images, time remaining=6.8 hours
+100: loss=98.467, avg loss=342.943, last=none, best=none, next=1000, rate=0.00000013, load 64=463.2 milliseconds, train=3.8 seconds, 6400 images, time remaining=6.8 hours
+Saving weights to /workspace/.cache/splits/combined_last.weights
+Resizing, random_coef=1.40, batch=4, 768x576
+GPU #0: allocating workspace: 4.2 GiB begins at 0x1481e0000000
+101: loss=73.380, avg loss=315.987, last=none, best=none, next=1000, rate=0.00000014, load 64=362.8 milliseconds, train=1.5 seconds, 6464 images, time remaining=6.8 hours
+102: loss=73.341, avg loss=291.722, last=none, best=none, next=1000, rate=0.00000014, load 64=387.7 milliseconds, train=1.5 seconds, 6528 images, time remaining=6.7 hours
+103: loss=63.053, avg loss=268.855, last=none, best=none, next=1000, rate=0.00000015, load 64=384.8 milliseconds, train=1.5 seconds, 6592 images, time remaining=6.7 hours
+104: loss=60.489, avg loss=248.019, last=none, best=none, next=1000, rate=0.00000015, load 64=329.2 milliseconds, train=1.5 seconds, 6656 images, time remaining=6.7 hours
+105: loss=71.004, avg loss=230.317, last=none, best=none, next=1000, rate=0.00000016, load 64=430.2 milliseconds, train=1.6 seconds, 6720 images, time remaining=6.6 hours
+106: loss=67.124, avg loss=213.998, last=none, best=none, next=1000, rate=0.00000016, load 64=360.4 milliseconds, train=1.6 seconds, 6784 images, time remaining=6.6 hours
+107: loss=62.176, avg loss=198.816, last=none, best=none, next=1000, rate=0.00000017, load 64=303.9 milliseconds, train=1.5 seconds, 6848 images, time remaining=6.6 hours
+108: loss=61.376, avg loss=185.072, last=none, best=none, next=1000, rate=0.00000018, load 64=303.8 milliseconds, train=1.5 seconds, 6912 images, time remaining=6.5 hours
+109: loss=65.287, avg loss=173.093, last=none, best=none, next=1000, rate=0.00000018, load 64=364.7 milliseconds, train=1.5 seconds, 6976 images, time remaining=6.5 hours
+110: loss=59.062, avg loss=161.690, last=none, best=none, next=1000, rate=0.00000019, load 64=415.0 milliseconds, train=1.5 seconds, 7040 images, time remaining=6.5 hours
+Resizing, random_coef=1.40, batch=4, 1344x1024
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+111: loss=66.244, avg loss=152.145, last=none, best=none, next=1000, rate=0.00000020, load 64=457.7 milliseconds, train=5.0 seconds, 7104 images, time remaining=6.6 hours
+112: loss=79.914, avg loss=144.922, last=none, best=none, next=1000, rate=0.00000020, load 64=462.5 milliseconds, train=5.0 seconds, 7168 images, time remaining=6.7 hours
+113: loss=75.401, avg loss=137.970, last=none, best=none, next=1000, rate=0.00000021, load 64=400.1 milliseconds, train=5.0 seconds, 7232 images, time remaining=6.7 hours
+114: loss=62.011, avg loss=130.374, last=none, best=none, next=1000, rate=0.00000022, load 64=383.8 milliseconds, train=5.0 seconds, 7296 images, time remaining=6.7 hours
+115: loss=73.483, avg loss=124.685, last=none, best=none, next=1000, rate=0.00000023, load 64=540.2 milliseconds, train=5.0 seconds, 7360 images, time remaining=6.8 hours
+116: loss=71.326, avg loss=119.349, last=none, best=none, next=1000, rate=0.00000024, load 64=416.1 milliseconds, train=5.0 seconds, 7424 images, time remaining=6.8 hours
+117: loss=64.588, avg loss=113.873, last=none, best=none, next=1000, rate=0.00000024, load 64=408.4 milliseconds, train=5.0 seconds, 7488 images, time remaining=6.8 hours
+118: loss=67.332, avg loss=109.219, last=none, best=none, next=1000, rate=0.00000025, load 64=544.4 milliseconds, train=5.0 seconds, 7552 images, time remaining=6.9 hours
+119: loss=55.752, avg loss=103.872, last=none, best=none, next=1000, rate=0.00000026, load 64=416.3 milliseconds, train=5.0 seconds, 7616 images, time remaining=6.9 hours
+120: loss=66.470, avg loss=100.132, last=none, best=none, next=1000, rate=0.00000027, load 64=368.1 milliseconds, train=5.0 seconds, 7680 images, time remaining=6.9 hours
+Resizing, random_coef=1.40, batch=4, 768x576
+GPU #0: allocating workspace: 4.2 GiB begins at 0x1481e0000000
+121: loss=58.537, avg loss=95.973, last=none, best=none, next=1000, rate=0.00000028, load 64=396.9 milliseconds, train=1.6 seconds, 7744 images, time remaining=6.9 hours
+122: loss=55.957, avg loss=91.971, last=none, best=none, next=1000, rate=0.00000029, load 64=304.1 milliseconds, train=1.6 seconds, 7808 images, time remaining=6.9 hours
+123: loss=51.801, avg loss=87.954, last=none, best=none, next=1000, rate=0.00000030, load 64=409.7 milliseconds, train=1.5 seconds, 7872 images, time remaining=6.8 hours
+124: loss=53.020, avg loss=84.460, last=none, best=none, next=1000, rate=0.00000031, load 64=426.1 milliseconds, train=1.5 seconds, 7936 images, time remaining=6.8 hours
+125: loss=55.196, avg loss=81.534, last=none, best=none, next=1000, rate=0.00000032, load 64=271.5 milliseconds, train=1.5 seconds, 8000 images, time remaining=6.8 hours
+126: loss=56.952, avg loss=79.076, last=none, best=none, next=1000, rate=0.00000033, load 64=374.6 milliseconds, train=1.5 seconds, 8064 images, time remaining=6.8 hours
+127: loss=53.331, avg loss=76.501, last=none, best=none, next=1000, rate=0.00000034, load 64=501.2 milliseconds, train=1.5 seconds, 8128 images, time remaining=6.7 hours
+128: loss=53.818, avg loss=74.233, last=none, best=none, next=1000, rate=0.00000035, load 64=313.9 milliseconds, train=1.5 seconds, 8192 images, time remaining=6.7 hours
+129: loss=51.327, avg loss=71.942, last=none, best=none, next=1000, rate=0.00000036, load 64=349.4 milliseconds, train=1.6 seconds, 8256 images, time remaining=6.7 hours
+130: loss=51.441, avg loss=69.892, last=none, best=none, next=1000, rate=0.00000037, load 64=386.2 milliseconds, train=1.5 seconds, 8320 images, time remaining=6.7 hours
+Resizing, random_coef=1.40, batch=4, 1280x992
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+131: loss=57.001, avg loss=68.603, last=none, best=none, next=1000, rate=0.00000038, load 64=386.6 milliseconds, train=4.7 seconds, 8384 images, time remaining=6.8 hours
+132: loss=61.694, avg loss=67.912, last=none, best=none, next=1000, rate=0.00000039, load 64=435.5 milliseconds, train=4.7 seconds, 8448 images, time remaining=6.8 hours
+133: loss=65.358, avg loss=67.657, last=none, best=none, next=1000, rate=0.00000041, load 64=386.3 milliseconds, train=4.7 seconds, 8512 images, time remaining=6.8 hours
+134: loss=57.716, avg loss=66.663, last=none, best=none, next=1000, rate=0.00000042, load 64=430.3 milliseconds, train=4.7 seconds, 8576 images, time remaining=6.8 hours
+135: loss=60.838, avg loss=66.080, last=none, best=none, next=1000, rate=0.00000043, load 64=428.1 milliseconds, train=4.7 seconds, 8640 images, time remaining=6.9 hours
+136: loss=59.097, avg loss=65.382, last=none, best=none, next=1000, rate=0.00000044, load 64=437.9 milliseconds, train=4.7 seconds, 8704 images, time remaining=6.9 hours
+137: loss=58.888, avg loss=64.733, last=none, best=none, next=1000, rate=0.00000046, load 64=390.3 milliseconds, train=4.7 seconds, 8768 images, time remaining=6.9 hours
+138: loss=58.331, avg loss=64.092, last=none, best=none, next=1000, rate=0.00000047, load 64=364.3 milliseconds, train=4.6 seconds, 8832 images, time remaining=6.9 hours
+139: loss=67.819, avg loss=64.465, last=none, best=none, next=1000, rate=0.00000049, load 64=416.0 milliseconds, train=4.7 seconds, 8896 images, time remaining=6.9 hours
+140: loss=58.305, avg loss=63.849, last=none, best=none, next=1000, rate=0.00000050, load 64=431.5 milliseconds, train=4.7 seconds, 8960 images, time remaining=7 hours
+Resizing, random_coef=1.40, batch=4, 704x544
+GPU #0: allocating workspace: 289.6 MiB begins at 0x148759000000
+141: loss=50.161, avg loss=62.480, last=none, best=none, next=1000, rate=0.00000051, load 64=339.3 milliseconds, train=1.2 seconds, 9024 images, time remaining=7 hours
+142: loss=59.749, avg loss=62.207, last=none, best=none, next=1000, rate=0.00000053, load 64=308.6 milliseconds, train=1.1 seconds, 9088 images, time remaining=6.9 hours
+143: loss=54.172, avg loss=61.404, last=none, best=none, next=1000, rate=0.00000054, load 64=349.2 milliseconds, train=1.1 seconds, 9152 images, time remaining=6.9 hours
+144: loss=40.454, avg loss=59.309, last=none, best=none, next=1000, rate=0.00000056, load 64=293.5 milliseconds, train=1.1 seconds, 9216 images, time remaining=6.8 hours
+145: loss=49.669, avg loss=58.345, last=none, best=none, next=1000, rate=0.00000057, load 64=421.3 milliseconds, train=1.1 seconds, 9280 images, time remaining=6.8 hours
+146: loss=47.451, avg loss=57.255, last=none, best=none, next=1000, rate=0.00000059, load 64=374.9 milliseconds, train=1.1 seconds, 9344 images, time remaining=6.8 hours
+147: loss=47.898, avg loss=56.320, last=none, best=none, next=1000, rate=0.00000061, load 64=353.5 milliseconds, train=1.1 seconds, 9408 images, time remaining=6.8 hours
+148: loss=51.374, avg loss=55.825, last=none, best=none, next=1000, rate=0.00000062, load 64=278.6 milliseconds, train=1.1 seconds, 9472 images, time remaining=6.7 hours
+149: loss=48.716, avg loss=55.114, last=none, best=none, next=1000, rate=0.00000064, load 64=303.8 milliseconds, train=1.1 seconds, 9536 images, time remaining=6.7 hours
+150: loss=49.167, avg loss=54.519, last=none, best=none, next=1000, rate=0.00000066, load 64=596.7 milliseconds, train=1.1 seconds, 9600 images, time remaining=6.7 hours
+Resizing, random_coef=1.40, batch=4, 864x672
+GPU #0: allocating workspace: 434.4 MiB begins at 0x148376400000
+151: loss=56.249, avg loss=54.692, last=none, best=none, next=1000, rate=0.00000068, load 64=268.0 milliseconds, train=1.7 seconds, 9664 images, time remaining=6.7 hours
+152: loss=51.830, avg loss=54.406, last=none, best=none, next=1000, rate=0.00000069, load 64=341.5 milliseconds, train=1.6 seconds, 9728 images, time remaining=6.7 hours
+153: loss=53.609, avg loss=54.326, last=none, best=none, next=1000, rate=0.00000071, load 64=325.3 milliseconds, train=1.7 seconds, 9792 images, time remaining=6.6 hours
+154: loss=56.624, avg loss=54.556, last=none, best=none, next=1000, rate=0.00000073, load 64=373.9 milliseconds, train=1.7 seconds, 9856 images, time remaining=6.6 hours
+155: loss=53.527, avg loss=54.453, last=none, best=none, next=1000, rate=0.00000075, load 64=415.4 milliseconds, train=1.6 seconds, 9920 images, time remaining=6.6 hours
+156: loss=51.415, avg loss=54.149, last=none, best=none, next=1000, rate=0.00000077, load 64=370.1 milliseconds, train=1.6 seconds, 9984 images, time remaining=6.6 hours
+157: loss=56.402, avg loss=54.375, last=none, best=none, next=1000, rate=0.00000079, load 64=393.7 milliseconds, train=1.7 seconds, 10048 images, time remaining=6.5 hours
+158: loss=57.165, avg loss=54.654, last=none, best=none, next=1000, rate=0.00000081, load 64=437.3 milliseconds, train=1.7 seconds, 10112 images, time remaining=6.5 hours
+159: loss=50.183, avg loss=54.207, last=none, best=none, next=1000, rate=0.00000083, load 64=379.8 milliseconds, train=1.6 seconds, 10176 images, time remaining=6.5 hours
+160: loss=53.598, avg loss=54.146, last=none, best=none, next=1000, rate=0.00000085, load 64=304.4 milliseconds, train=1.6 seconds, 10240 images, time remaining=6.5 hours
+Resizing, random_coef=1.40, batch=4, 832x640
+GPU #0: allocating workspace: 399.1 MiB begins at 0x148524800000
+161: loss=51.313, avg loss=53.862, last=none, best=none, next=1000, rate=0.00000087, load 64=404.6 milliseconds, train=1.5 seconds, 10304 images, time remaining=6.5 hours
+162: loss=50.582, avg loss=53.534, last=none, best=none, next=1000, rate=0.00000090, load 64=351.2 milliseconds, train=1.5 seconds, 10368 images, time remaining=6.5 hours
+163: loss=51.988, avg loss=53.380, last=none, best=none, next=1000, rate=0.00000092, load 64=307.8 milliseconds, train=1.5 seconds, 10432 images, time remaining=6.4 hours
+164: loss=54.388, avg loss=53.481, last=none, best=none, next=1000, rate=0.00000094, load 64=385.0 milliseconds, train=1.6 seconds, 10496 images, time remaining=6.4 hours
+165: loss=48.966, avg loss=53.029, last=none, best=none, next=1000, rate=0.00000096, load 64=380.5 milliseconds, train=1.5 seconds, 10560 images, time remaining=6.4 hours
+166: loss=47.339, avg loss=52.460, last=none, best=none, next=1000, rate=0.00000099, load 64=495.8 milliseconds, train=1.6 seconds, 10624 images, time remaining=6.4 hours
+167: loss=45.542, avg loss=51.768, last=none, best=none, next=1000, rate=0.00000101, load 64=323.0 milliseconds, train=1.6 seconds, 10688 images, time remaining=6.4 hours
+168: loss=45.818, avg loss=51.173, last=none, best=none, next=1000, rate=0.00000104, load 64=350.3 milliseconds, train=1.5 seconds, 10752 images, time remaining=6.3 hours
+169: loss=53.835, avg loss=51.439, last=none, best=none, next=1000, rate=0.00000106, load 64=395.9 milliseconds, train=1.6 seconds, 10816 images, time remaining=6.3 hours
+170: loss=46.787, avg loss=50.974, last=none, best=none, next=1000, rate=0.00000109, load 64=374.1 milliseconds, train=1.5 seconds, 10880 images, time remaining=6.3 hours
+Resizing, random_coef=1.40, batch=4, 1184x928
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+171: loss=55.403, avg loss=51.417, last=none, best=none, next=1000, rate=0.00000111, load 64=412.7 milliseconds, train=3.9 seconds, 10944 images, time remaining=6.4 hours
+172: loss=52.793, avg loss=51.555, last=none, best=none, next=1000, rate=0.00000114, load 64=334.1 milliseconds, train=3.9 seconds, 11008 images, time remaining=6.4 hours
+173: loss=45.116, avg loss=50.911, last=none, best=none, next=1000, rate=0.00000116, load 64=357.6 milliseconds, train=3.9 seconds, 11072 images, time remaining=6.4 hours
+174: loss=53.872, avg loss=51.207, last=none, best=none, next=1000, rate=0.00000119, load 64=431.2 milliseconds, train=3.9 seconds, 11136 images, time remaining=6.4 hours
+175: loss=56.109, avg loss=51.697, last=none, best=none, next=1000, rate=0.00000122, load 64=316.5 milliseconds, train=3.9 seconds, 11200 images, time remaining=6.4 hours
+176: loss=54.574, avg loss=51.985, last=none, best=none, next=1000, rate=0.00000125, load 64=303.2 milliseconds, train=3.9 seconds, 11264 images, time remaining=6.4 hours
+177: loss=47.955, avg loss=51.582, last=none, best=none, next=1000, rate=0.00000128, load 64=372.0 milliseconds, train=3.9 seconds, 11328 images, time remaining=6.4 hours
+178: loss=49.547, avg loss=51.378, last=none, best=none, next=1000, rate=0.00000131, load 64=410.9 milliseconds, train=3.9 seconds, 11392 images, time remaining=6.4 hours
+179: loss=50.193, avg loss=51.260, last=none, best=none, next=1000, rate=0.00000133, load 64=460.6 milliseconds, train=3.9 seconds, 11456 images, time remaining=6.5 hours
+180: loss=44.806, avg loss=50.614, last=none, best=none, next=1000, rate=0.00000136, load 64=390.4 milliseconds, train=3.9 seconds, 11520 images, time remaining=6.5 hours
+Resizing, random_coef=1.40, batch=4, 960x736
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+181: loss=48.716, avg loss=50.425, last=none, best=none, next=1000, rate=0.00000140, load 64=320.5 milliseconds, train=2.1 seconds, 11584 images, time remaining=6.5 hours
+182: loss=43.735, avg loss=49.756, last=none, best=none, next=1000, rate=0.00000143, load 64=548.8 milliseconds, train=2.1 seconds, 11648 images, time remaining=6.4 hours
+183: loss=51.504, avg loss=49.930, last=none, best=none, next=1000, rate=0.00000146, load 64=371.3 milliseconds, train=2.1 seconds, 11712 images, time remaining=6.4 hours
+184: loss=50.140, avg loss=49.951, last=none, best=none, next=1000, rate=0.00000149, load 64=341.0 milliseconds, train=2.1 seconds, 11776 images, time remaining=6.4 hours
+185: loss=52.164, avg loss=50.173, last=none, best=none, next=1000, rate=0.00000152, load 64=278.7 milliseconds, train=2.1 seconds, 11840 images, time remaining=6.4 hours
+186: loss=48.786, avg loss=50.034, last=none, best=none, next=1000, rate=0.00000156, load 64=364.5 milliseconds, train=2.1 seconds, 11904 images, time remaining=6.4 hours
+187: loss=49.856, avg loss=50.016, last=none, best=none, next=1000, rate=0.00000159, load 64=311.0 milliseconds, train=2.1 seconds, 11968 images, time remaining=6.4 hours
+188: loss=46.078, avg loss=49.622, last=none, best=none, next=1000, rate=0.00000162, load 64=354.0 milliseconds, train=2.1 seconds, 12032 images, time remaining=6.4 hours
+189: loss=41.781, avg loss=48.838, last=none, best=none, next=1000, rate=0.00000166, load 64=304.1 milliseconds, train=2.1 seconds, 12096 images, time remaining=6.4 hours
+190: loss=54.514, avg loss=49.406, last=none, best=none, next=1000, rate=0.00000169, load 64=359.6 milliseconds, train=2.1 seconds, 12160 images, time remaining=6.4 hours
+Resizing, random_coef=1.40, batch=4, 896x704
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+191: loss=49.125, avg loss=49.378, last=none, best=none, next=1000, rate=0.00000173, load 64=286.9 milliseconds, train=1.9 seconds, 12224 images, time remaining=6.3 hours
+192: loss=42.555, avg loss=48.695, last=none, best=none, next=1000, rate=0.00000177, load 64=352.3 milliseconds, train=1.9 seconds, 12288 images, time remaining=6.3 hours
+193: loss=49.520, avg loss=48.778, last=none, best=none, next=1000, rate=0.00000180, load 64=375.6 milliseconds, train=1.9 seconds, 12352 images, time remaining=6.3 hours
+194: loss=50.432, avg loss=48.943, last=none, best=none, next=1000, rate=0.00000184, load 64=314.3 milliseconds, train=1.9 seconds, 12416 images, time remaining=6.3 hours
+195: loss=49.733, avg loss=49.022, last=none, best=none, next=1000, rate=0.00000188, load 64=390.3 milliseconds, train=1.9 seconds, 12480 images, time remaining=6.3 hours
+196: loss=43.170, avg loss=48.437, last=none, best=none, next=1000, rate=0.00000192, load 64=381.3 milliseconds, train=1.9 seconds, 12544 images, time remaining=6.3 hours
+197: loss=40.533, avg loss=47.647, last=none, best=none, next=1000, rate=0.00000196, load 64=344.1 milliseconds, train=1.9 seconds, 12608 images, time remaining=6.3 hours
+198: loss=48.109, avg loss=47.693, last=none, best=none, next=1000, rate=0.00000200, load 64=420.4 milliseconds, train=1.9 seconds, 12672 images, time remaining=6.3 hours
+199: loss=52.798, avg loss=48.203, last=none, best=none, next=1000, rate=0.00000204, load 64=357.2 milliseconds, train=1.9 seconds, 12736 images, time remaining=6.3 hours
+200: loss=43.776, avg loss=47.761, last=none, best=none, next=1000, rate=0.00000208, load 64=304.4 milliseconds, train=1.9 seconds, 12800 images, time remaining=6.3 hours
+Saving weights to /workspace/.cache/splits/combined_last.weights
+Resizing, random_coef=1.40, batch=4, 1248x960
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+201: loss=41.780, avg loss=47.163, last=none, best=none, next=1000, rate=0.00000212, load 64=550.2 milliseconds, train=4.6 seconds, 12864 images, time remaining=6.3 hours
+202: loss=42.979, avg loss=46.744, last=none, best=none, next=1000, rate=0.00000216, load 64=342.8 milliseconds, train=4.5 seconds, 12928 images, time remaining=6.3 hours
+203: loss=41.595, avg loss=46.229, last=none, best=none, next=1000, rate=0.00000221, load 64=369.8 milliseconds, train=4.5 seconds, 12992 images, time remaining=6.3 hours
+204: loss=41.758, avg loss=45.782, last=none, best=none, next=1000, rate=0.00000225, load 64=341.4 milliseconds, train=4.5 seconds, 13056 images, time remaining=6.4 hours
+205: loss=39.657, avg loss=45.170, last=none, best=none, next=1000, rate=0.00000230, load 64=386.5 milliseconds, train=4.5 seconds, 13120 images, time remaining=6.4 hours
+206: loss=41.789, avg loss=44.832, last=none, best=none, next=1000, rate=0.00000234, load 64=373.3 milliseconds, train=4.5 seconds, 13184 images, time remaining=6.4 hours
+207: loss=45.982, avg loss=44.947, last=none, best=none, next=1000, rate=0.00000239, load 64=351.7 milliseconds, train=4.6 seconds, 13248 images, time remaining=6.4 hours
+208: loss=40.290, avg loss=44.481, last=none, best=none, next=1000, rate=0.00000243, load 64=360.1 milliseconds, train=4.5 seconds, 13312 images, time remaining=6.4 hours
+209: loss=43.346, avg loss=44.367, last=none, best=none, next=1000, rate=0.00000248, load 64=355.5 milliseconds, train=4.6 seconds, 13376 images, time remaining=6.4 hours
+210: loss=40.402, avg loss=43.971, last=none, best=none, next=1000, rate=0.00000253, load 64=444.5 milliseconds, train=4.5 seconds, 13440 images, time remaining=6.5 hours
+Resizing, random_coef=1.40, batch=4, 896x704
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+211: loss=42.266, avg loss=43.800, last=none, best=none, next=1000, rate=0.00000258, load 64=360.2 milliseconds, train=1.9 seconds, 13504 images, time remaining=6.4 hours
+212: loss=36.743, avg loss=43.095, last=none, best=none, next=1000, rate=0.00000263, load 64=380.2 milliseconds, train=1.9 seconds, 13568 images, time remaining=6.4 hours
+213: loss=39.240, avg loss=42.709, last=none, best=none, next=1000, rate=0.00000268, load 64=357.5 milliseconds, train=1.9 seconds, 13632 images, time remaining=6.4 hours
+214: loss=44.587, avg loss=42.897, last=none, best=none, next=1000, rate=0.00000273, load 64=334.5 milliseconds, train=1.9 seconds, 13696 images, time remaining=6.4 hours
+215: loss=37.977, avg loss=42.405, last=none, best=none, next=1000, rate=0.00000278, load 64=379.8 milliseconds, train=1.9 seconds, 13760 images, time remaining=6.4 hours
+216: loss=33.878, avg loss=41.552, last=none, best=none, next=1000, rate=0.00000283, load 64=355.4 milliseconds, train=1.9 seconds, 13824 images, time remaining=6.4 hours
+217: loss=38.032, avg loss=41.200, last=none, best=none, next=1000, rate=0.00000288, load 64=338.3 milliseconds, train=1.9 seconds, 13888 images, time remaining=6.4 hours
+218: loss=37.059, avg loss=40.786, last=none, best=none, next=1000, rate=0.00000294, load 64=323.7 milliseconds, train=1.9 seconds, 13952 images, time remaining=6.4 hours
+219: loss=38.817, avg loss=40.589, last=none, best=none, next=1000, rate=0.00000299, load 64=329.5 milliseconds, train=1.9 seconds, 14016 images, time remaining=6.4 hours
+220: loss=35.719, avg loss=40.102, last=none, best=none, next=1000, rate=0.00000305, load 64=416.2 milliseconds, train=1.9 seconds, 14080 images, time remaining=6.3 hours
+Resizing, random_coef=1.40, batch=4, 768x608
+GPU #0: allocating workspace: 351.1 MiB begins at 0x148738000000
+221: loss=38.202, avg loss=39.912, last=none, best=none, next=1000, rate=0.00000310, load 64=397.9 milliseconds, train=1.4 seconds, 14144 images, time remaining=6.3 hours
+222: loss=36.277, avg loss=39.549, last=none, best=none, next=1000, rate=0.00000316, load 64=297.7 milliseconds, train=1.4 seconds, 14208 images, time remaining=6.3 hours
+223: loss=37.360, avg loss=39.330, last=none, best=none, next=1000, rate=0.00000321, load 64=418.8 milliseconds, train=1.4 seconds, 14272 images, time remaining=6.3 hours
+224: loss=29.601, avg loss=38.357, last=none, best=none, next=1000, rate=0.00000327, load 64=339.6 milliseconds, train=1.4 seconds, 14336 images, time remaining=6.3 hours
+225: loss=35.347, avg loss=38.056, last=none, best=none, next=1000, rate=0.00000333, load 64=286.2 milliseconds, train=1.4 seconds, 14400 images, time remaining=6.3 hours
+226: loss=33.510, avg loss=37.601, last=none, best=none, next=1000, rate=0.00000339, load 64=319.6 milliseconds, train=1.4 seconds, 14464 images, time remaining=6.3 hours
+227: loss=38.249, avg loss=37.666, last=none, best=none, next=1000, rate=0.00000345, load 64=364.8 milliseconds, train=1.4 seconds, 14528 images, time remaining=6.2 hours
+228: loss=40.349, avg loss=37.934, last=none, best=none, next=1000, rate=0.00000351, load 64=334.9 milliseconds, train=1.4 seconds, 14592 images, time remaining=6.2 hours
+229: loss=34.044, avg loss=37.545, last=none, best=none, next=1000, rate=0.00000358, load 64=440.7 milliseconds, train=1.4 seconds, 14656 images, time remaining=6.2 hours
+230: loss=34.923, avg loss=37.283, last=none, best=none, next=1000, rate=0.00000364, load 64=268.7 milliseconds, train=1.4 seconds, 14720 images, time remaining=6.2 hours
+Resizing, random_coef=1.40, batch=4, 832x640
+GPU #0: allocating workspace: 399.1 MiB begins at 0x1483ae400000
+231: loss=33.581, avg loss=36.913, last=none, best=none, next=1000, rate=0.00000370, load 64=315.9 milliseconds, train=1.5 seconds, 14784 images, time remaining=6.2 hours
+232: loss=34.866, avg loss=36.708, last=none, best=none, next=1000, rate=0.00000377, load 64=324.4 milliseconds, train=1.6 seconds, 14848 images, time remaining=6.2 hours
+233: loss=34.806, avg loss=36.518, last=none, best=none, next=1000, rate=0.00000383, load 64=613.4 milliseconds, train=1.5 seconds, 14912 images, time remaining=6.2 hours
+234: loss=35.243, avg loss=36.390, last=none, best=none, next=1000, rate=0.00000390, load 64=294.1 milliseconds, train=1.5 seconds, 14976 images, time remaining=6.2 hours
+235: loss=37.324, avg loss=36.484, last=none, best=none, next=1000, rate=0.00000396, load 64=294.8 milliseconds, train=1.6 seconds, 15040 images, time remaining=6.1 hours
+236: loss=33.997, avg loss=36.235, last=none, best=none, next=1000, rate=0.00000403, load 64=330.3 milliseconds, train=1.6 seconds, 15104 images, time remaining=6.1 hours
+237: loss=34.732, avg loss=36.085, last=none, best=none, next=1000, rate=0.00000410, load 64=320.6 milliseconds, train=1.6 seconds, 15168 images, time remaining=6.1 hours
+238: loss=32.404, avg loss=35.717, last=none, best=none, next=1000, rate=0.00000417, load 64=394.8 milliseconds, train=1.5 seconds, 15232 images, time remaining=6.1 hours
+239: loss=36.501, avg loss=35.795, last=none, best=none, next=1000, rate=0.00000424, load 64=310.0 milliseconds, train=1.6 seconds, 15296 images, time remaining=6.1 hours
+240: loss=32.914, avg loss=35.507, last=none, best=none, next=1000, rate=0.00000431, load 64=369.4 milliseconds, train=1.6 seconds, 15360 images, time remaining=6.1 hours
+Resizing, random_coef=1.40, batch=4, 1344x1024
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+241: loss=34.762, avg loss=35.433, last=none, best=none, next=1000, rate=0.00000439, load 64=456.0 milliseconds, train=5.0 seconds, 15424 images, time remaining=6.1 hours
+242: loss=34.708, avg loss=35.360, last=none, best=none, next=1000, rate=0.00000446, load 64=424.1 milliseconds, train=5.0 seconds, 15488 images, time remaining=6.2 hours
+243: loss=33.343, avg loss=35.158, last=none, best=none, next=1000, rate=0.00000453, load 64=400.3 milliseconds, train=5.0 seconds, 15552 images, time remaining=6.2 hours
+244: loss=34.978, avg loss=35.140, last=none, best=none, next=1000, rate=0.00000461, load 64=400.1 milliseconds, train=5.0 seconds, 15616 images, time remaining=6.2 hours
+245: loss=29.325, avg loss=34.559, last=none, best=none, next=1000, rate=0.00000468, load 64=405.4 milliseconds, train=5.0 seconds, 15680 images, time remaining=6.2 hours
+246: loss=27.837, avg loss=33.887, last=none, best=none, next=1000, rate=0.00000476, load 64=508.0 milliseconds, train=4.9 seconds, 15744 images, time remaining=6.2 hours
+247: loss=34.414, avg loss=33.939, last=none, best=none, next=1000, rate=0.00000484, load 64=364.9 milliseconds, train=5.0 seconds, 15808 images, time remaining=6.3 hours
+248: loss=29.051, avg loss=33.451, last=none, best=none, next=1000, rate=0.00000492, load 64=396.4 milliseconds, train=4.9 seconds, 15872 images, time remaining=6.3 hours
+249: loss=36.191, avg loss=33.725, last=none, best=none, next=1000, rate=0.00000500, load 64=348.5 milliseconds, train=5.0 seconds, 15936 images, time remaining=6.3 hours
+250: loss=35.034, avg loss=33.856, last=none, best=none, next=1000, rate=0.00000508, load 64=375.9 milliseconds, train=5.0 seconds, 16000 images, time remaining=6.3 hours
+Resizing, random_coef=1.40, batch=4, 1024x768
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+251: loss=32.358, avg loss=33.706, last=none, best=none, next=1000, rate=0.00000516, load 64=295.9 milliseconds, train=3.2 seconds, 16064 images, time remaining=6.3 hours
+252: loss=33.849, avg loss=33.720, last=none, best=none, next=1000, rate=0.00000524, load 64=335.9 milliseconds, train=3.2 seconds, 16128 images, time remaining=6.3 hours
+253: loss=32.277, avg loss=33.576, last=none, best=none, next=1000, rate=0.00000533, load 64=294.5 milliseconds, train=3.2 seconds, 16192 images, time remaining=6.3 hours
+254: loss=36.685, avg loss=33.887, last=none, best=none, next=1000, rate=0.00000541, load 64=405.8 milliseconds, train=3.2 seconds, 16256 images, time remaining=6.3 hours
+255: loss=31.709, avg loss=33.669, last=none, best=none, next=1000, rate=0.00000550, load 64=345.4 milliseconds, train=3.2 seconds, 16320 images, time remaining=6.3 hours
+256: loss=33.998, avg loss=33.702, last=none, best=none, next=1000, rate=0.00000558, load 64=417.8 milliseconds, train=3.2 seconds, 16384 images, time remaining=6.3 hours
+257: loss=36.201, avg loss=33.952, last=none, best=none, next=1000, rate=0.00000567, load 64=333.1 milliseconds, train=3.2 seconds, 16448 images, time remaining=6.3 hours
+258: loss=30.956, avg loss=33.652, last=none, best=none, next=1000, rate=0.00000576, load 64=301.1 milliseconds, train=3.2 seconds, 16512 images, time remaining=6.3 hours
+259: loss=30.323, avg loss=33.319, last=none, best=none, next=1000, rate=0.00000585, load 64=335.3 milliseconds, train=3.2 seconds, 16576 images, time remaining=6.3 hours
+260: loss=29.881, avg loss=32.976, last=none, best=none, next=1000, rate=0.00000594, load 64=391.1 milliseconds, train=3.2 seconds, 16640 images, time remaining=6.3 hours
+Resizing, random_coef=1.40, batch=4, 800x640
+GPU #0: allocating workspace: 384.1 MiB begins at 0x148519c00000
+261: loss=29.973, avg loss=32.675, last=none, best=none, next=1000, rate=0.00000603, load 64=342.5 milliseconds, train=1.5 seconds, 16704 images, time remaining=6.3 hours
+262: loss=31.306, avg loss=32.538, last=none, best=none, next=1000, rate=0.00000613, load 64=295.7 milliseconds, train=1.5 seconds, 16768 images, time remaining=6.3 hours
+263: loss=29.206, avg loss=32.205, last=none, best=none, next=1000, rate=0.00000622, load 64=359.7 milliseconds, train=1.5 seconds, 16832 images, time remaining=6.3 hours
+264: loss=32.494, avg loss=32.234, last=none, best=none, next=1000, rate=0.00000631, load 64=271.5 milliseconds, train=1.5 seconds, 16896 images, time remaining=6.3 hours
+265: loss=35.318, avg loss=32.542, last=none, best=none, next=1000, rate=0.00000641, load 64=263.6 milliseconds, train=1.5 seconds, 16960 images, time remaining=6.3 hours
+266: loss=30.894, avg loss=32.378, last=none, best=none, next=1000, rate=0.00000651, load 64=337.0 milliseconds, train=1.5 seconds, 17024 images, time remaining=6.3 hours
+267: loss=28.135, avg loss=31.953, last=none, best=none, next=1000, rate=0.00000661, load 64=339.8 milliseconds, train=1.5 seconds, 17088 images, time remaining=6.2 hours
+268: loss=29.616, avg loss=31.720, last=none, best=none, next=1000, rate=0.00000671, load 64=264.1 milliseconds, train=1.5 seconds, 17152 images, time remaining=6.2 hours
+269: loss=30.007, avg loss=31.548, last=none, best=none, next=1000, rate=0.00000681, load 64=334.3 milliseconds, train=1.5 seconds, 17216 images, time remaining=6.2 hours
+270: loss=28.311, avg loss=31.225, last=none, best=none, next=1000, rate=0.00000691, load 64=354.3 milliseconds, train=1.5 seconds, 17280 images, time remaining=6.2 hours
+Resizing, random_coef=1.40, batch=4, 928x704
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+271: loss=30.677, avg loss=31.170, last=none, best=none, next=1000, rate=0.00000701, load 64=352.2 milliseconds, train=2.0 seconds, 17344 images, time remaining=6.2 hours
+272: loss=30.361, avg loss=31.089, last=none, best=none, next=1000, rate=0.00000712, load 64=458.8 milliseconds, train=2.0 seconds, 17408 images, time remaining=6.2 hours
+273: loss=27.999, avg loss=30.780, last=none, best=none, next=1000, rate=0.00000722, load 64=341.2 milliseconds, train=2.0 seconds, 17472 images, time remaining=6.2 hours
+274: loss=30.116, avg loss=30.714, last=none, best=none, next=1000, rate=0.00000733, load 64=346.6 milliseconds, train=2.0 seconds, 17536 images, time remaining=6.2 hours
+275: loss=29.892, avg loss=30.631, last=none, best=none, next=1000, rate=0.00000743, load 64=389.6 milliseconds, train=2.0 seconds, 17600 images, time remaining=6.2 hours
+276: loss=32.502, avg loss=30.819, last=none, best=none, next=1000, rate=0.00000754, load 64=323.7 milliseconds, train=2.0 seconds, 17664 images, time remaining=6.2 hours
+277: loss=32.064, avg loss=30.943, last=none, best=none, next=1000, rate=0.00000765, load 64=299.3 milliseconds, train=2.0 seconds, 17728 images, time remaining=6.2 hours
+278: loss=31.183, avg loss=30.967, last=none, best=none, next=1000, rate=0.00000776, load 64=281.4 milliseconds, train=2.0 seconds, 17792 images, time remaining=6.2 hours
+279: loss=32.156, avg loss=31.086, last=none, best=none, next=1000, rate=0.00000788, load 64=405.1 milliseconds, train=2.0 seconds, 17856 images, time remaining=6.1 hours
+280: loss=29.380, avg loss=30.915, last=none, best=none, next=1000, rate=0.00000799, load 64=379.5 milliseconds, train=2.0 seconds, 17920 images, time remaining=6.1 hours
+Resizing, random_coef=1.40, batch=4, 1248x960
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+281: loss=31.305, avg loss=30.954, last=none, best=none, next=1000, rate=0.00000811, load 64=348.6 milliseconds, train=4.5 seconds, 17984 images, time remaining=6.2 hours
+282: loss=31.750, avg loss=31.034, last=none, best=none, next=1000, rate=0.00000822, load 64=370.5 milliseconds, train=4.5 seconds, 18048 images, time remaining=6.2 hours
+283: loss=35.978, avg loss=31.528, last=none, best=none, next=1000, rate=0.00000834, load 64=483.0 milliseconds, train=4.6 seconds, 18112 images, time remaining=6.2 hours
+284: loss=30.060, avg loss=31.382, last=none, best=none, next=1000, rate=0.00000846, load 64=362.5 milliseconds, train=4.5 seconds, 18176 images, time remaining=6.2 hours
+285: loss=31.103, avg loss=31.354, last=none, best=none, next=1000, rate=0.00000858, load 64=400.4 milliseconds, train=4.5 seconds, 18240 images, time remaining=6.2 hours
+286: loss=27.668, avg loss=30.985, last=none, best=none, next=1000, rate=0.00000870, load 64=306.5 milliseconds, train=4.5 seconds, 18304 images, time remaining=6.2 hours
+287: loss=33.742, avg loss=31.261, last=none, best=none, next=1000, rate=0.00000882, load 64=449.8 milliseconds, train=4.6 seconds, 18368 images, time remaining=6.2 hours
+288: loss=29.231, avg loss=31.058, last=none, best=none, next=1000, rate=0.00000894, load 64=401.9 milliseconds, train=4.5 seconds, 18432 images, time remaining=6.3 hours
+289: loss=30.346, avg loss=30.987, last=none, best=none, next=1000, rate=0.00000907, load 64=389.4 milliseconds, train=4.5 seconds, 18496 images, time remaining=6.3 hours
+290: loss=33.869, avg loss=31.275, last=none, best=none, next=1000, rate=0.00000919, load 64=385.5 milliseconds, train=4.6 seconds, 18560 images, time remaining=6.3 hours
+Resizing, random_coef=1.40, batch=4, 1312x1024
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+291: loss=33.499, avg loss=31.497, last=none, best=none, next=1000, rate=0.00000932, load 64=430.4 milliseconds, train=4.9 seconds, 18624 images, time remaining=6.3 hours
+292: loss=30.854, avg loss=31.433, last=none, best=none, next=1000, rate=0.00000945, load 64=507.7 milliseconds, train=4.9 seconds, 18688 images, time remaining=6.3 hours
+293: loss=32.740, avg loss=31.564, last=none, best=none, next=1000, rate=0.00000958, load 64=371.8 milliseconds, train=4.9 seconds, 18752 images, time remaining=6.3 hours
+294: loss=27.514, avg loss=31.159, last=none, best=none, next=1000, rate=0.00000971, load 64=355.9 milliseconds, train=4.9 seconds, 18816 images, time remaining=6.4 hours
+295: loss=31.026, avg loss=31.145, last=none, best=none, next=1000, rate=0.00000985, load 64=323.7 milliseconds, train=4.9 seconds, 18880 images, time remaining=6.4 hours
+296: loss=28.310, avg loss=30.862, last=none, best=none, next=1000, rate=0.00000998, load 64=401.1 milliseconds, train=4.9 seconds, 18944 images, time remaining=6.4 hours
+297: loss=28.834, avg loss=30.659, last=none, best=none, next=1000, rate=0.00001012, load 64=345.7 milliseconds, train=4.9 seconds, 19008 images, time remaining=6.4 hours
+298: loss=30.618, avg loss=30.655, last=none, best=none, next=1000, rate=0.00001025, load 64=396.8 milliseconds, train=4.9 seconds, 19072 images, time remaining=6.4 hours
+299: loss=28.329, avg loss=30.422, last=none, best=none, next=1000, rate=0.00001039, load 64=372.8 milliseconds, train=4.9 seconds, 19136 images, time remaining=6.4 hours
+300: loss=26.473, avg loss=30.027, last=none, best=none, next=1000, rate=0.00001053, load 64=344.0 milliseconds, train=4.8 seconds, 19200 images, time remaining=6.4 hours
+Saving weights to /workspace/.cache/splits/combined_last.weights
+Resizing, random_coef=1.40, batch=4, 896x672
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+301: loss=29.828, avg loss=30.007, last=none, best=none, next=1000, rate=0.00001067, load 64=333.3 milliseconds, train=1.9 seconds, 19264 images, time remaining=6.4 hours
+302: loss=28.510, avg loss=29.858, last=none, best=none, next=1000, rate=0.00001081, load 64=293.1 milliseconds, train=1.9 seconds, 19328 images, time remaining=6.4 hours
+303: loss=27.389, avg loss=29.611, last=none, best=none, next=1000, rate=0.00001096, load 64=354.6 milliseconds, train=1.8 seconds, 19392 images, time remaining=6.4 hours
+304: loss=28.285, avg loss=29.478, last=none, best=none, next=1000, rate=0.00001110, load 64=364.6 milliseconds, train=1.8 seconds, 19456 images, time remaining=6.4 hours
+305: loss=26.133, avg loss=29.144, last=none, best=none, next=1000, rate=0.00001125, load 64=349.5 milliseconds, train=1.9 seconds, 19520 images, time remaining=6.4 hours
+306: loss=26.239, avg loss=28.853, last=none, best=none, next=1000, rate=0.00001140, load 64=298.6 milliseconds, train=1.8 seconds, 19584 images, time remaining=6.4 hours
+307: loss=27.866, avg loss=28.755, last=none, best=none, next=1000, rate=0.00001155, load 64=380.5 milliseconds, train=1.9 seconds, 19648 images, time remaining=6.4 hours
+308: loss=25.263, avg loss=28.405, last=none, best=none, next=1000, rate=0.00001170, load 64=360.0 milliseconds, train=1.9 seconds, 19712 images, time remaining=6.4 hours
+309: loss=28.974, avg loss=28.462, last=none, best=none, next=1000, rate=0.00001185, load 64=405.5 milliseconds, train=1.8 seconds, 19776 images, time remaining=6.4 hours
+310: loss=33.351, avg loss=28.951, last=none, best=none, next=1000, rate=0.00001201, load 64=457.5 milliseconds, train=1.9 seconds, 19840 images, time remaining=6.4 hours
+Resizing, random_coef=1.40, batch=4, 768x608
+GPU #0: allocating workspace: 351.1 MiB begins at 0x1486df200000
+311: loss=27.399, avg loss=28.796, last=none, best=none, next=1000, rate=0.00001216, load 64=331.0 milliseconds, train=1.4 seconds, 19904 images, time remaining=6.3 hours
+312: loss=26.055, avg loss=28.522, last=none, best=none, next=1000, rate=0.00001232, load 64=329.0 milliseconds, train=1.4 seconds, 19968 images, time remaining=6.3 hours
+313: loss=26.830, avg loss=28.353, last=none, best=none, next=1000, rate=0.00001248, load 64=288.5 milliseconds, train=1.4 seconds, 20032 images, time remaining=6.3 hours
+314: loss=26.125, avg loss=28.130, last=none, best=none, next=1000, rate=0.00001264, load 64=311.0 milliseconds, train=1.4 seconds, 20096 images, time remaining=6.3 hours
+315: loss=25.544, avg loss=27.871, last=none, best=none, next=1000, rate=0.00001280, load 64=281.4 milliseconds, train=1.4 seconds, 20160 images, time remaining=6.3 hours
+316: loss=26.442, avg loss=27.728, last=none, best=none, next=1000, rate=0.00001296, load 64=309.3 milliseconds, train=1.4 seconds, 20224 images, time remaining=6.3 hours
+317: loss=28.916, avg loss=27.847, last=none, best=none, next=1000, rate=0.00001313, load 64=339.8 milliseconds, train=1.4 seconds, 20288 images, time remaining=6.3 hours
+318: loss=23.686, avg loss=27.431, last=none, best=none, next=1000, rate=0.00001329, load 64=320.8 milliseconds, train=1.4 seconds, 20352 images, time remaining=6.3 hours
+319: loss=26.786, avg loss=27.367, last=none, best=none, next=1000, rate=0.00001346, load 64=303.9 milliseconds, train=1.4 seconds, 20416 images, time remaining=6.3 hours
+320: loss=26.912, avg loss=27.321, last=none, best=none, next=1000, rate=0.00001363, load 64=270.7 milliseconds, train=1.4 seconds, 20480 images, time remaining=6.2 hours
+Resizing, random_coef=1.40, batch=4, 928x704
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+321: loss=29.038, avg loss=27.493, last=none, best=none, next=1000, rate=0.00001380, load 64=328.7 milliseconds, train=2.0 seconds, 20544 images, time remaining=6.2 hours
+322: loss=30.673, avg loss=27.811, last=none, best=none, next=1000, rate=0.00001398, load 64=334.5 milliseconds, train=2.0 seconds, 20608 images, time remaining=6.2 hours
+323: loss=26.758, avg loss=27.706, last=none, best=none, next=1000, rate=0.00001415, load 64=309.8 milliseconds, train=2.0 seconds, 20672 images, time remaining=6.2 hours
+324: loss=25.121, avg loss=27.447, last=none, best=none, next=1000, rate=0.00001433, load 64=399.6 milliseconds, train=2.0 seconds, 20736 images, time remaining=6.2 hours
+325: loss=31.907, avg loss=27.893, last=none, best=none, next=1000, rate=0.00001450, load 64=460.8 milliseconds, train=2.0 seconds, 20800 images, time remaining=6.2 hours
+326: loss=26.644, avg loss=27.768, last=none, best=none, next=1000, rate=0.00001468, load 64=355.0 milliseconds, train=2.0 seconds, 20864 images, time remaining=6.2 hours
+327: loss=25.745, avg loss=27.566, last=none, best=none, next=1000, rate=0.00001486, load 64=329.9 milliseconds, train=2.0 seconds, 20928 images, time remaining=6.2 hours
+328: loss=29.954, avg loss=27.805, last=none, best=none, next=1000, rate=0.00001505, load 64=324.2 milliseconds, train=2.0 seconds, 20992 images, time remaining=6.2 hours
+329: loss=30.978, avg loss=28.122, last=none, best=none, next=1000, rate=0.00001523, load 64=434.1 milliseconds, train=2.0 seconds, 21056 images, time remaining=6.2 hours
+330: loss=24.521, avg loss=27.762, last=none, best=none, next=1000, rate=0.00001542, load 64=489.5 milliseconds, train=2.0 seconds, 21120 images, time remaining=6.2 hours
+Resizing, random_coef=1.40, batch=4, 768x608
+GPU #0: allocating workspace: 351.1 MiB begins at 0x14875ca00000
+331: loss=25.106, avg loss=27.496, last=none, best=none, next=1000, rate=0.00001560, load 64=334.3 milliseconds, train=1.4 seconds, 21184 images, time remaining=6.2 hours
+332: loss=24.732, avg loss=27.220, last=none, best=none, next=1000, rate=0.00001579, load 64=288.4 milliseconds, train=1.4 seconds, 21248 images, time remaining=6.2 hours
+333: loss=27.065, avg loss=27.204, last=none, best=none, next=1000, rate=0.00001599, load 64=440.2 milliseconds, train=1.4 seconds, 21312 images, time remaining=6.2 hours
+334: loss=25.094, avg loss=26.993, last=none, best=none, next=1000, rate=0.00001618, load 64=273.8 milliseconds, train=1.4 seconds, 21376 images, time remaining=6.1 hours
+335: loss=29.701, avg loss=27.264, last=none, best=none, next=1000, rate=0.00001637, load 64=355.4 milliseconds, train=1.4 seconds, 21440 images, time remaining=6.1 hours
+336: loss=26.438, avg loss=27.181, last=none, best=none, next=1000, rate=0.00001657, load 64=295.6 milliseconds, train=1.4 seconds, 21504 images, time remaining=6.1 hours
+337: loss=28.557, avg loss=27.319, last=none, best=none, next=1000, rate=0.00001677, load 64=313.7 milliseconds, train=1.4 seconds, 21568 images, time remaining=6.1 hours
+338: loss=27.754, avg loss=27.363, last=none, best=none, next=1000, rate=0.00001697, load 64=318.3 milliseconds, train=1.4 seconds, 21632 images, time remaining=6.1 hours
+339: loss=25.200, avg loss=27.146, last=none, best=none, next=1000, rate=0.00001717, load 64=293.9 milliseconds, train=1.4 seconds, 21696 images, time remaining=6.1 hours
+340: loss=24.374, avg loss=26.869, last=none, best=none, next=1000, rate=0.00001737, load 64=324.0 milliseconds, train=1.4 seconds, 21760 images, time remaining=6.1 hours
+Resizing, random_coef=1.40, batch=4, 1280x992
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+341: loss=33.037, avg loss=27.486, last=none, best=none, next=1000, rate=0.00001758, load 64=420.7 milliseconds, train=4.7 seconds, 21824 images, time remaining=6.1 hours
+342: loss=30.560, avg loss=27.793, last=none, best=none, next=1000, rate=0.00001778, load 64=518.4 milliseconds, train=4.6 seconds, 21888 images, time remaining=6.1 hours
+343: loss=32.509, avg loss=28.265, last=none, best=none, next=1000, rate=0.00001799, load 64=339.6 milliseconds, train=4.7 seconds, 21952 images, time remaining=6.1 hours
+344: loss=32.587, avg loss=28.697, last=none, best=none, next=1000, rate=0.00001820, load 64=350.2 milliseconds, train=4.7 seconds, 22016 images, time remaining=6.2 hours
+345: loss=25.496, avg loss=28.377, last=none, best=none, next=1000, rate=0.00001842, load 64=383.8 milliseconds, train=4.6 seconds, 22080 images, time remaining=6.2 hours
+346: loss=28.828, avg loss=28.422, last=none, best=none, next=1000, rate=0.00001863, load 64=335.5 milliseconds, train=4.6 seconds, 22144 images, time remaining=6.2 hours
+347: loss=31.700, avg loss=28.750, last=none, best=none, next=1000, rate=0.00001885, load 64=412.3 milliseconds, train=4.6 seconds, 22208 images, time remaining=6.2 hours
+348: loss=30.436, avg loss=28.918, last=none, best=none, next=1000, rate=0.00001907, load 64=321.0 milliseconds, train=4.7 seconds, 22272 images, time remaining=6.2 hours
+349: loss=30.969, avg loss=29.123, last=none, best=none, next=1000, rate=0.00001929, load 64=348.6 milliseconds, train=4.7 seconds, 22336 images, time remaining=6.2 hours
+350: loss=31.917, avg loss=29.403, last=none, best=none, next=1000, rate=0.00001951, load 64=352.5 milliseconds, train=4.7 seconds, 22400 images, time remaining=6.2 hours
+Resizing, random_coef=1.40, batch=4, 960x736
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+351: loss=27.081, avg loss=29.171, last=none, best=none, next=1000, rate=0.00001973, load 64=392.1 milliseconds, train=2.1 seconds, 22464 images, time remaining=6.2 hours
+352: loss=30.073, avg loss=29.261, last=none, best=none, next=1000, rate=0.00001996, load 64=356.6 milliseconds, train=2.1 seconds, 22528 images, time remaining=6.2 hours
+353: loss=25.923, avg loss=28.927, last=none, best=none, next=1000, rate=0.00002019, load 64=439.3 milliseconds, train=2.1 seconds, 22592 images, time remaining=6.2 hours
+354: loss=29.799, avg loss=29.014, last=none, best=none, next=1000, rate=0.00002042, load 64=329.9 milliseconds, train=2.1 seconds, 22656 images, time remaining=6.2 hours
+355: loss=29.003, avg loss=29.013, last=none, best=none, next=1000, rate=0.00002065, load 64=362.8 milliseconds, train=2.1 seconds, 22720 images, time remaining=6.2 hours
+356: loss=27.751, avg loss=28.887, last=none, best=none, next=1000, rate=0.00002088, load 64=253.9 milliseconds, train=2.1 seconds, 22784 images, time remaining=6.2 hours
+357: loss=32.461, avg loss=29.244, last=none, best=none, next=1000, rate=0.00002112, load 64=326.2 milliseconds, train=2.1 seconds, 22848 images, time remaining=6.2 hours
+358: loss=26.367, avg loss=28.957, last=none, best=none, next=1000, rate=0.00002135, load 64=419.5 milliseconds, train=2.1 seconds, 22912 images, time remaining=6.2 hours
+359: loss=27.835, avg loss=28.844, last=none, best=none, next=1000, rate=0.00002159, load 64=359.6 milliseconds, train=2.1 seconds, 22976 images, time remaining=6.2 hours
+360: loss=25.149, avg loss=28.475, last=none, best=none, next=1000, rate=0.00002184, load 64=324.2 milliseconds, train=2.1 seconds, 23040 images, time remaining=6.2 hours
+Resizing, random_coef=1.40, batch=4, 1056x832
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+361: loss=28.741, avg loss=28.502, last=none, best=none, next=1000, rate=0.00002208, load 64=422.1 milliseconds, train=3.4 seconds, 23104 images, time remaining=6.2 hours
+362: loss=28.329, avg loss=28.484, last=none, best=none, next=1000, rate=0.00002232, load 64=363.7 milliseconds, train=3.3 seconds, 23168 images, time remaining=6.2 hours
+363: loss=29.857, avg loss=28.622, last=none, best=none, next=1000, rate=0.00002257, load 64=374.9 milliseconds, train=3.4 seconds, 23232 images, time remaining=6.2 hours
+364: loss=33.729, avg loss=29.132, last=none, best=none, next=1000, rate=0.00002282, load 64=391.0 milliseconds, train=3.4 seconds, 23296 images, time remaining=6.2 hours
+365: loss=28.988, avg loss=29.118, last=none, best=none, next=1000, rate=0.00002307, load 64=315.4 milliseconds, train=3.3 seconds, 23360 images, time remaining=6.2 hours
+366: loss=26.516, avg loss=28.858, last=none, best=none, next=1000, rate=0.00002333, load 64=425.9 milliseconds, train=3.4 seconds, 23424 images, time remaining=6.2 hours
+367: loss=28.822, avg loss=28.854, last=none, best=none, next=1000, rate=0.00002358, load 64=297.0 milliseconds, train=3.3 seconds, 23488 images, time remaining=6.2 hours
+368: loss=28.132, avg loss=28.782, last=none, best=none, next=1000, rate=0.00002384, load 64=385.9 milliseconds, train=3.4 seconds, 23552 images, time remaining=6.2 hours
+369: loss=26.627, avg loss=28.566, last=none, best=none, next=1000, rate=0.00002410, load 64=420.8 milliseconds, train=3.3 seconds, 23616 images, time remaining=6.2 hours
+370: loss=29.550, avg loss=28.665, last=none, best=none, next=1000, rate=0.00002436, load 64=345.2 milliseconds, train=3.4 seconds, 23680 images, time remaining=6.2 hours
+Resizing, random_coef=1.40, batch=4, 864x672
+GPU #0: allocating workspace: 434.4 MiB begins at 0x14866ea00000
+371: loss=26.184, avg loss=28.417, last=none, best=none, next=1000, rate=0.00002463, load 64=279.4 milliseconds, train=1.6 seconds, 23744 images, time remaining=6.2 hours
+372: loss=24.757, avg loss=28.051, last=none, best=none, next=1000, rate=0.00002490, load 64=383.8 milliseconds, train=1.6 seconds, 23808 images, time remaining=6.2 hours
+373: loss=23.604, avg loss=27.606, last=none, best=none, next=1000, rate=0.00002516, load 64=258.5 milliseconds, train=1.6 seconds, 23872 images, time remaining=6.2 hours
+374: loss=28.352, avg loss=27.681, last=none, best=none, next=1000, rate=0.00002543, load 64=322.1 milliseconds, train=1.6 seconds, 23936 images, time remaining=6.2 hours
+375: loss=26.201, avg loss=27.533, last=none, best=none, next=1000, rate=0.00002571, load 64=364.8 milliseconds, train=1.7 seconds, 24000 images, time remaining=6.2 hours
+376: loss=25.723, avg loss=27.352, last=none, best=none, next=1000, rate=0.00002598, load 64=360.6 milliseconds, train=1.6 seconds, 24064 images, time remaining=6.1 hours
+377: loss=26.412, avg loss=27.258, last=none, best=none, next=1000, rate=0.00002626, load 64=294.7 milliseconds, train=1.6 seconds, 24128 images, time remaining=6.1 hours
+378: loss=26.131, avg loss=27.145, last=none, best=none, next=1000, rate=0.00002654, load 64=374.6 milliseconds, train=1.6 seconds, 24192 images, time remaining=6.1 hours
+379: loss=30.111, avg loss=27.442, last=none, best=none, next=1000, rate=0.00002682, load 64=398.8 milliseconds, train=1.7 seconds, 24256 images, time remaining=6.1 hours
+380: loss=26.194, avg loss=27.317, last=none, best=none, next=1000, rate=0.00002711, load 64=295.0 milliseconds, train=1.7 seconds, 24320 images, time remaining=6.1 hours
+Resizing, random_coef=1.40, batch=4, 768x576
+GPU #0: allocating workspace: 4.2 GiB begins at 0x1481e0000000
+381: loss=28.906, avg loss=27.476, last=none, best=none, next=1000, rate=0.00002739, load 64=310.3 milliseconds, train=1.5 seconds, 24384 images, time remaining=6.1 hours
+382: loss=23.679, avg loss=27.096, last=none, best=none, next=1000, rate=0.00002768, load 64=344.1 milliseconds, train=1.5 seconds, 24448 images, time remaining=6.1 hours
+383: loss=25.596, avg loss=26.946, last=none, best=none, next=1000, rate=0.00002797, load 64=283.2 milliseconds, train=1.5 seconds, 24512 images, time remaining=6.1 hours
+384: loss=23.455, avg loss=26.597, last=none, best=none, next=1000, rate=0.00002827, load 64=281.0 milliseconds, train=1.6 seconds, 24576 images, time remaining=6.1 hours
+385: loss=23.321, avg loss=26.269, last=none, best=none, next=1000, rate=0.00002856, load 64=345.0 milliseconds, train=1.5 seconds, 24640 images, time remaining=6.1 hours
+386: loss=24.938, avg loss=26.136, last=none, best=none, next=1000, rate=0.00002886, load 64=364.9 milliseconds, train=1.5 seconds, 24704 images, time remaining=6.1 hours
+387: loss=22.408, avg loss=25.763, last=none, best=none, next=1000, rate=0.00002916, load 64=345.6 milliseconds, train=1.5 seconds, 24768 images, time remaining=6.1 hours
+388: loss=23.654, avg loss=25.553, last=none, best=none, next=1000, rate=0.00002946, load 64=314.4 milliseconds, train=1.5 seconds, 24832 images, time remaining=6 hours
+389: loss=25.125, avg loss=25.510, last=none, best=none, next=1000, rate=0.00002977, load 64=380.0 milliseconds, train=1.5 seconds, 24896 images, time remaining=6 hours
+390: loss=24.776, avg loss=25.436, last=none, best=none, next=1000, rate=0.00003007, load 64=354.6 milliseconds, train=1.5 seconds, 24960 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 768x576
+GPU #0: allocating workspace: 4.2 GiB begins at 0x1481e0000000
+391: loss=23.623, avg loss=25.255, last=none, best=none, next=1000, rate=0.00003038, load 64=517.0 milliseconds, train=1.5 seconds, 25024 images, time remaining=6 hours
+392: loss=23.532, avg loss=25.083, last=none, best=none, next=1000, rate=0.00003070, load 64=297.2 milliseconds, train=1.5 seconds, 25088 images, time remaining=6 hours
+393: loss=24.044, avg loss=24.979, last=none, best=none, next=1000, rate=0.00003101, load 64=369.6 milliseconds, train=1.5 seconds, 25152 images, time remaining=6 hours
+394: loss=23.631, avg loss=24.844, last=none, best=none, next=1000, rate=0.00003133, load 64=384.7 milliseconds, train=1.5 seconds, 25216 images, time remaining=6 hours
+395: loss=21.607, avg loss=24.520, last=none, best=none, next=1000, rate=0.00003165, load 64=315.1 milliseconds, train=1.5 seconds, 25280 images, time remaining=6 hours
+396: loss=23.820, avg loss=24.450, last=none, best=none, next=1000, rate=0.00003197, load 64=305.5 milliseconds, train=1.6 seconds, 25344 images, time remaining=6 hours
+397: loss=22.545, avg loss=24.260, last=none, best=none, next=1000, rate=0.00003229, load 64=350.8 milliseconds, train=1.5 seconds, 25408 images, time remaining=6 hours
+398: loss=20.191, avg loss=23.853, last=none, best=none, next=1000, rate=0.00003262, load 64=309.1 milliseconds, train=1.5 seconds, 25472 images, time remaining=6 hours
+399: loss=22.645, avg loss=23.732, last=none, best=none, next=1000, rate=0.00003295, load 64=270.6 milliseconds, train=1.6 seconds, 25536 images, time remaining=6 hours
+400: loss=24.117, avg loss=23.771, last=none, best=none, next=1000, rate=0.00003328, load 64=355.0 milliseconds, train=1.5 seconds, 25600 images, time remaining=6 hours
+Saving weights to /workspace/.cache/splits/combined_last.weights
+Resizing, random_coef=1.40, batch=4, 992x768
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+401: loss=25.940, avg loss=23.988, last=none, best=none, next=1000, rate=0.00003361, load 64=587.2 milliseconds, train=3.2 seconds, 25664 images, time remaining=6 hours
+402: loss=26.587, avg loss=24.247, last=none, best=none, next=1000, rate=0.00003395, load 64=373.5 milliseconds, train=3.2 seconds, 25728 images, time remaining=6 hours
+403: loss=27.956, avg loss=24.618, last=none, best=none, next=1000, rate=0.00003429, load 64=355.4 milliseconds, train=3.2 seconds, 25792 images, time remaining=6 hours
+404: loss=27.867, avg loss=24.943, last=none, best=none, next=1000, rate=0.00003463, load 64=304.9 milliseconds, train=3.2 seconds, 25856 images, time remaining=6 hours
+405: loss=26.639, avg loss=25.113, last=none, best=none, next=1000, rate=0.00003498, load 64=346.4 milliseconds, train=3.2 seconds, 25920 images, time remaining=6 hours
+406: loss=29.956, avg loss=25.597, last=none, best=none, next=1000, rate=0.00003532, load 64=339.8 milliseconds, train=3.2 seconds, 25984 images, time remaining=6 hours
+407: loss=27.123, avg loss=25.750, last=none, best=none, next=1000, rate=0.00003567, load 64=319.3 milliseconds, train=3.2 seconds, 26048 images, time remaining=6 hours
+408: loss=26.567, avg loss=25.831, last=none, best=none, next=1000, rate=0.00003602, load 64=322.1 milliseconds, train=3.2 seconds, 26112 images, time remaining=6 hours
+409: loss=24.294, avg loss=25.678, last=none, best=none, next=1000, rate=0.00003638, load 64=324.1 milliseconds, train=3.2 seconds, 26176 images, time remaining=6 hours
+410: loss=23.519, avg loss=25.462, last=none, best=none, next=1000, rate=0.00003673, load 64=350.2 milliseconds, train=3.2 seconds, 26240 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 800x608
+GPU #0: allocating workspace: 365.4 MiB begins at 0x1486f7c00000
+411: loss=25.739, avg loss=25.489, last=none, best=none, next=1000, rate=0.00003709, load 64=312.8 milliseconds, train=1.5 seconds, 26304 images, time remaining=6 hours
+412: loss=24.599, avg loss=25.400, last=none, best=none, next=1000, rate=0.00003746, load 64=371.7 milliseconds, train=1.5 seconds, 26368 images, time remaining=6 hours
+413: loss=24.158, avg loss=25.276, last=none, best=none, next=1000, rate=0.00003782, load 64=380.4 milliseconds, train=1.4 seconds, 26432 images, time remaining=6 hours
+414: loss=24.655, avg loss=25.214, last=none, best=none, next=1000, rate=0.00003819, load 64=354.8 milliseconds, train=1.4 seconds, 26496 images, time remaining=6 hours
+415: loss=25.868, avg loss=25.280, last=none, best=none, next=1000, rate=0.00003856, load 64=364.4 milliseconds, train=1.4 seconds, 26560 images, time remaining=5.9 hours
+416: loss=25.622, avg loss=25.314, last=none, best=none, next=1000, rate=0.00003893, load 64=389.7 milliseconds, train=1.4 seconds, 26624 images, time remaining=5.9 hours
+417: loss=24.320, avg loss=25.214, last=none, best=none, next=1000, rate=0.00003931, load 64=364.9 milliseconds, train=1.5 seconds, 26688 images, time remaining=5.9 hours
+418: loss=24.942, avg loss=25.187, last=none, best=none, next=1000, rate=0.00003969, load 64=374.7 milliseconds, train=1.4 seconds, 26752 images, time remaining=5.9 hours
+419: loss=22.132, avg loss=24.882, last=none, best=none, next=1000, rate=0.00004007, load 64=391.7 milliseconds, train=1.4 seconds, 26816 images, time remaining=5.9 hours
+420: loss=25.702, avg loss=24.964, last=none, best=none, next=1000, rate=0.00004045, load 64=313.8 milliseconds, train=1.4 seconds, 26880 images, time remaining=5.9 hours
+Resizing, random_coef=1.40, batch=4, 832x640
+GPU #0: allocating workspace: 399.1 MiB begins at 0x149008200000
+421: loss=23.782, avg loss=24.846, last=none, best=none, next=1000, rate=0.00004084, load 64=354.9 milliseconds, train=1.5 seconds, 26944 images, time remaining=5.9 hours
+422: loss=23.451, avg loss=24.706, last=none, best=none, next=1000, rate=0.00004123, load 64=334.5 milliseconds, train=1.5 seconds, 27008 images, time remaining=5.9 hours
+423: loss=23.173, avg loss=24.553, last=none, best=none, next=1000, rate=0.00004162, load 64=365.1 milliseconds, train=1.5 seconds, 27072 images, time remaining=5.9 hours
+424: loss=19.961, avg loss=24.094, last=none, best=none, next=1000, rate=0.00004202, load 64=319.5 milliseconds, train=1.5 seconds, 27136 images, time remaining=5.9 hours
+425: loss=22.737, avg loss=23.958, last=none, best=none, next=1000, rate=0.00004241, load 64=304.8 milliseconds, train=1.5 seconds, 27200 images, time remaining=5.9 hours
+426: loss=22.319, avg loss=23.794, last=none, best=none, next=1000, rate=0.00004281, load 64=329.5 milliseconds, train=1.5 seconds, 27264 images, time remaining=5.9 hours
+427: loss=23.646, avg loss=23.779, last=none, best=none, next=1000, rate=0.00004322, load 64=364.2 milliseconds, train=1.6 seconds, 27328 images, time remaining=5.9 hours
+428: loss=23.347, avg loss=23.736, last=none, best=none, next=1000, rate=0.00004362, load 64=370.0 milliseconds, train=1.5 seconds, 27392 images, time remaining=5.9 hours
+429: loss=23.120, avg loss=23.674, last=none, best=none, next=1000, rate=0.00004403, load 64=617.5 milliseconds, train=1.6 seconds, 27456 images, time remaining=5.9 hours
+430: loss=25.461, avg loss=23.853, last=none, best=none, next=1000, rate=0.00004444, load 64=335.8 milliseconds, train=1.5 seconds, 27520 images, time remaining=5.8 hours
+Resizing, random_coef=1.40, batch=4, 1376x1056
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+431: loss=33.200, avg loss=24.788, last=none, best=none, next=1000, rate=0.00004486, load 64=451.6 milliseconds, train=5.2 seconds, 27584 images, time remaining=5.9 hours
+432: loss=29.713, avg loss=25.280, last=none, best=none, next=1000, rate=0.00004528, load 64=390.7 milliseconds, train=5.2 seconds, 27648 images, time remaining=5.9 hours
+433: loss=23.488, avg loss=25.101, last=none, best=none, next=1000, rate=0.00004570, load 64=522.1 milliseconds, train=5.1 seconds, 27712 images, time remaining=5.9 hours
+434: loss=27.825, avg loss=25.373, last=none, best=none, next=1000, rate=0.00004612, load 64=411.7 milliseconds, train=5.1 seconds, 27776 images, time remaining=5.9 hours
+435: loss=29.194, avg loss=25.755, last=none, best=none, next=1000, rate=0.00004655, load 64=398.1 milliseconds, train=5.1 seconds, 27840 images, time remaining=5.9 hours
+436: loss=27.643, avg loss=25.944, last=none, best=none, next=1000, rate=0.00004698, load 64=392.1 milliseconds, train=5.1 seconds, 27904 images, time remaining=5.9 hours
+437: loss=28.449, avg loss=26.195, last=none, best=none, next=1000, rate=0.00004741, load 64=367.3 milliseconds, train=5.2 seconds, 27968 images, time remaining=5.9 hours
+438: loss=29.121, avg loss=26.487, last=none, best=none, next=1000, rate=0.00004785, load 64=366.7 milliseconds, train=5.2 seconds, 28032 images, time remaining=6 hours
+439: loss=23.092, avg loss=26.148, last=none, best=none, next=1000, rate=0.00004828, load 64=373.1 milliseconds, train=5.1 seconds, 28096 images, time remaining=6 hours
+440: loss=26.174, avg loss=26.150, last=none, best=none, next=1000, rate=0.00004873, load 64=402.8 milliseconds, train=5.1 seconds, 28160 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 1024x800
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+441: loss=31.658, avg loss=26.701, last=none, best=none, next=1000, rate=0.00004917, load 64=331.7 milliseconds, train=3.3 seconds, 28224 images, time remaining=6 hours
+442: loss=29.616, avg loss=26.993, last=none, best=none, next=1000, rate=0.00004962, load 64=374.0 milliseconds, train=3.3 seconds, 28288 images, time remaining=6 hours
+443: loss=24.405, avg loss=26.734, last=none, best=none, next=1000, rate=0.00005007, load 64=306.6 milliseconds, train=3.3 seconds, 28352 images, time remaining=6 hours
+444: loss=25.441, avg loss=26.605, last=none, best=none, next=1000, rate=0.00005052, load 64=305.1 milliseconds, train=3.2 seconds, 28416 images, time remaining=6 hours
+445: loss=28.070, avg loss=26.751, last=none, best=none, next=1000, rate=0.00005098, load 64=318.1 milliseconds, train=3.3 seconds, 28480 images, time remaining=6 hours
+446: loss=25.133, avg loss=26.589, last=none, best=none, next=1000, rate=0.00005144, load 64=324.9 milliseconds, train=3.3 seconds, 28544 images, time remaining=6 hours
+447: loss=25.647, avg loss=26.495, last=none, best=none, next=1000, rate=0.00005190, load 64=294.0 milliseconds, train=3.3 seconds, 28608 images, time remaining=6 hours
+448: loss=22.447, avg loss=26.090, last=none, best=none, next=1000, rate=0.00005237, load 64=289.4 milliseconds, train=3.3 seconds, 28672 images, time remaining=6 hours
+449: loss=26.757, avg loss=26.157, last=none, best=none, next=1000, rate=0.00005284, load 64=292.0 milliseconds, train=3.3 seconds, 28736 images, time remaining=6 hours
+450: loss=27.905, avg loss=26.332, last=none, best=none, next=1000, rate=0.00005331, load 64=399.7 milliseconds, train=3.3 seconds, 28800 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 800x608
+GPU #0: allocating workspace: 365.4 MiB begins at 0x14859a400000
+451: loss=22.129, avg loss=25.912, last=none, best=none, next=1000, rate=0.00005378, load 64=390.4 milliseconds, train=1.4 seconds, 28864 images, time remaining=6 hours
+452: loss=21.114, avg loss=25.432, last=none, best=none, next=1000, rate=0.00005426, load 64=314.8 milliseconds, train=1.4 seconds, 28928 images, time remaining=6 hours
+453: loss=24.070, avg loss=25.296, last=none, best=none, next=1000, rate=0.00005474, load 64=280.9 milliseconds, train=1.4 seconds, 28992 images, time remaining=6 hours
+454: loss=23.054, avg loss=25.071, last=none, best=none, next=1000, rate=0.00005523, load 64=346.3 milliseconds, train=1.4 seconds, 29056 images, time remaining=6 hours
+455: loss=22.435, avg loss=24.808, last=none, best=none, next=1000, rate=0.00005572, load 64=339.5 milliseconds, train=1.4 seconds, 29120 images, time remaining=6 hours
+456: loss=23.443, avg loss=24.671, last=none, best=none, next=1000, rate=0.00005621, load 64=275.2 milliseconds, train=1.4 seconds, 29184 images, time remaining=5.9 hours
+457: loss=23.352, avg loss=24.539, last=none, best=none, next=1000, rate=0.00005670, load 64=323.7 milliseconds, train=1.5 seconds, 29248 images, time remaining=5.9 hours
+458: loss=23.463, avg loss=24.432, last=none, best=none, next=1000, rate=0.00005720, load 64=313.8 milliseconds, train=1.4 seconds, 29312 images, time remaining=5.9 hours
+459: loss=24.931, avg loss=24.482, last=none, best=none, next=1000, rate=0.00005770, load 64=350.4 milliseconds, train=1.5 seconds, 29376 images, time remaining=5.9 hours
+460: loss=21.392, avg loss=24.173, last=none, best=none, next=1000, rate=0.00005821, load 64=258.5 milliseconds, train=1.4 seconds, 29440 images, time remaining=5.9 hours
+Resizing, random_coef=1.40, batch=4, 1248x960
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+461: loss=28.786, avg loss=24.634, last=none, best=none, next=1000, rate=0.00005871, load 64=472.7 milliseconds, train=4.6 seconds, 29504 images, time remaining=5.9 hours
+462: loss=24.157, avg loss=24.586, last=none, best=none, next=1000, rate=0.00005923, load 64=445.7 milliseconds, train=4.5 seconds, 29568 images, time remaining=6 hours
+463: loss=22.829, avg loss=24.411, last=none, best=none, next=1000, rate=0.00005974, load 64=408.4 milliseconds, train=4.5 seconds, 29632 images, time remaining=6 hours
+464: loss=24.710, avg loss=24.441, last=none, best=none, next=1000, rate=0.00006026, load 64=391.2 milliseconds, train=4.5 seconds, 29696 images, time remaining=6 hours
+465: loss=25.378, avg loss=24.534, last=none, best=none, next=1000, rate=0.00006078, load 64=357.8 milliseconds, train=4.6 seconds, 29760 images, time remaining=6 hours
+466: loss=25.036, avg loss=24.585, last=none, best=none, next=1000, rate=0.00006130, load 64=377.3 milliseconds, train=4.6 seconds, 29824 images, time remaining=6 hours
+467: loss=24.070, avg loss=24.533, last=none, best=none, next=1000, rate=0.00006183, load 64=321.7 milliseconds, train=4.5 seconds, 29888 images, time remaining=6 hours
+468: loss=28.233, avg loss=24.903, last=none, best=none, next=1000, rate=0.00006236, load 64=328.7 milliseconds, train=4.6 seconds, 29952 images, time remaining=6 hours
+469: loss=24.539, avg loss=24.867, last=none, best=none, next=1000, rate=0.00006290, load 64=448.1 milliseconds, train=4.5 seconds, 30016 images, time remaining=6 hours
+470: loss=25.188, avg loss=24.899, last=none, best=none, next=1000, rate=0.00006344, load 64=484.1 milliseconds, train=4.5 seconds, 30080 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 832x640
+GPU #0: allocating workspace: 399.1 MiB begins at 0x14842e200000
+471: loss=21.579, avg loss=24.567, last=none, best=none, next=1000, rate=0.00006398, load 64=389.8 milliseconds, train=1.5 seconds, 30144 images, time remaining=6 hours
+472: loss=20.934, avg loss=24.204, last=none, best=none, next=1000, rate=0.00006452, load 64=305.7 milliseconds, train=1.5 seconds, 30208 images, time remaining=6 hours
+473: loss=20.640, avg loss=23.847, last=none, best=none, next=1000, rate=0.00006507, load 64=342.0 milliseconds, train=1.5 seconds, 30272 images, time remaining=6 hours
+474: loss=21.169, avg loss=23.579, last=none, best=none, next=1000, rate=0.00006562, load 64=393.4 milliseconds, train=1.5 seconds, 30336 images, time remaining=6 hours
+475: loss=24.296, avg loss=23.651, last=none, best=none, next=1000, rate=0.00006618, load 64=374.9 milliseconds, train=1.5 seconds, 30400 images, time remaining=6 hours
+476: loss=24.940, avg loss=23.780, last=none, best=none, next=1000, rate=0.00006674, load 64=425.3 milliseconds, train=1.6 seconds, 30464 images, time remaining=6 hours
+477: loss=24.646, avg loss=23.867, last=none, best=none, next=1000, rate=0.00006730, load 64=300.1 milliseconds, train=1.6 seconds, 30528 images, time remaining=6 hours
+478: loss=24.928, avg loss=23.973, last=none, best=none, next=1000, rate=0.00006787, load 64=344.7 milliseconds, train=1.6 seconds, 30592 images, time remaining=6 hours
+479: loss=25.476, avg loss=24.123, last=none, best=none, next=1000, rate=0.00006844, load 64=354.2 milliseconds, train=1.6 seconds, 30656 images, time remaining=5.9 hours
+480: loss=21.622, avg loss=23.873, last=none, best=none, next=1000, rate=0.00006901, load 64=390.7 milliseconds, train=1.6 seconds, 30720 images, time remaining=5.9 hours
+Resizing, random_coef=1.40, batch=4, 960x736
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1483ffa00000
+481: loss=20.577, avg loss=23.543, last=none, best=none, next=1000, rate=0.00006959, load 64=349.3 milliseconds, train=2.1 seconds, 30784 images, time remaining=5.9 hours
+482: loss=20.887, avg loss=23.278, last=none, best=none, next=1000, rate=0.00007017, load 64=420.1 milliseconds, train=2.1 seconds, 30848 images, time remaining=5.9 hours
+483: loss=20.747, avg loss=23.025, last=none, best=none, next=1000, rate=0.00007075, load 64=356.0 milliseconds, train=2.1 seconds, 30912 images, time remaining=5.9 hours
+484: loss=24.116, avg loss=23.134, last=none, best=none, next=1000, rate=0.00007134, load 64=294.8 milliseconds, train=2.1 seconds, 30976 images, time remaining=5.9 hours
+485: loss=24.557, avg loss=23.276, last=none, best=none, next=1000, rate=0.00007193, load 64=290.7 milliseconds, train=2.1 seconds, 31040 images, time remaining=5.9 hours
+486: loss=24.969, avg loss=23.445, last=none, best=none, next=1000, rate=0.00007253, load 64=455.1 milliseconds, train=2.1 seconds, 31104 images, time remaining=5.9 hours
+487: loss=22.046, avg loss=23.305, last=none, best=none, next=1000, rate=0.00007312, load 64=385.1 milliseconds, train=2.1 seconds, 31168 images, time remaining=5.9 hours
+488: loss=20.639, avg loss=23.039, last=none, best=none, next=1000, rate=0.00007373, load 64=358.7 milliseconds, train=2.1 seconds, 31232 images, time remaining=5.9 hours
+489: loss=23.358, avg loss=23.071, last=none, best=none, next=1000, rate=0.00007433, load 64=397.0 milliseconds, train=2.1 seconds, 31296 images, time remaining=5.9 hours
+490: loss=21.992, avg loss=22.963, last=none, best=none, next=1000, rate=0.00007494, load 64=309.0 milliseconds, train=2.1 seconds, 31360 images, time remaining=5.9 hours
+Resizing, random_coef=1.40, batch=4, 1248x992
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+491: loss=23.108, avg loss=22.977, last=none, best=none, next=1000, rate=0.00007556, load 64=404.5 milliseconds, train=4.7 seconds, 31424 images, time remaining=5.9 hours
+492: loss=20.444, avg loss=22.724, last=none, best=none, next=1000, rate=0.00007617, load 64=372.0 milliseconds, train=4.6 seconds, 31488 images, time remaining=5.9 hours
+493: loss=25.455, avg loss=22.997, last=none, best=none, next=1000, rate=0.00007679, load 64=357.4 milliseconds, train=4.6 seconds, 31552 images, time remaining=6 hours
+494: loss=22.615, avg loss=22.959, last=none, best=none, next=1000, rate=0.00007742, load 64=390.6 milliseconds, train=4.6 seconds, 31616 images, time remaining=6 hours
+495: loss=24.075, avg loss=23.071, last=none, best=none, next=1000, rate=0.00007805, load 64=322.7 milliseconds, train=4.6 seconds, 31680 images, time remaining=6 hours
+496: loss=23.501, avg loss=23.114, last=none, best=none, next=1000, rate=0.00007868, load 64=349.0 milliseconds, train=4.7 seconds, 31744 images, time remaining=6 hours
+497: loss=24.297, avg loss=23.232, last=none, best=none, next=1000, rate=0.00007932, load 64=301.9 milliseconds, train=4.6 seconds, 31808 images, time remaining=6 hours
+498: loss=23.673, avg loss=23.276, last=none, best=none, next=1000, rate=0.00007996, load 64=412.3 milliseconds, train=4.6 seconds, 31872 images, time remaining=6 hours
+499: loss=23.464, avg loss=23.295, last=none, best=none, next=1000, rate=0.00008060, load 64=393.8 milliseconds, train=4.6 seconds, 31936 images, time remaining=6 hours
+500: loss=26.135, avg loss=23.579, last=none, best=none, next=1000, rate=0.00008125, load 64=475.6 milliseconds, train=4.6 seconds, 32000 images, time remaining=6 hours
+Saving weights to /workspace/.cache/splits/combined_last.weights
+Resizing, random_coef=1.40, batch=4, 1248x960
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+501: loss=26.383, avg loss=23.859, last=none, best=none, next=1000, rate=0.00008190, load 64=425.1 milliseconds, train=4.6 seconds, 32064 images, time remaining=6 hours
+502: loss=21.667, avg loss=23.640, last=none, best=none, next=1000, rate=0.00008256, load 64=405.0 milliseconds, train=4.5 seconds, 32128 images, time remaining=6 hours
+503: loss=21.304, avg loss=23.406, last=none, best=none, next=1000, rate=0.00008322, load 64=391.0 milliseconds, train=4.5 seconds, 32192 images, time remaining=6 hours
+504: loss=21.178, avg loss=23.184, last=none, best=none, next=1000, rate=0.00008388, load 64=342.3 milliseconds, train=4.5 seconds, 32256 images, time remaining=6 hours
+505: loss=21.226, avg loss=22.988, last=none, best=none, next=1000, rate=0.00008455, load 64=351.6 milliseconds, train=4.5 seconds, 32320 images, time remaining=6 hours
+506: loss=23.533, avg loss=23.042, last=none, best=none, next=1000, rate=0.00008522, load 64=442.6 milliseconds, train=4.6 seconds, 32384 images, time remaining=6 hours
+507: loss=21.040, avg loss=22.842, last=none, best=none, next=1000, rate=0.00008590, load 64=409.9 milliseconds, train=4.5 seconds, 32448 images, time remaining=6 hours
+508: loss=21.456, avg loss=22.703, last=none, best=none, next=1000, rate=0.00008658, load 64=412.0 milliseconds, train=4.5 seconds, 32512 images, time remaining=6.1 hours
+509: loss=22.448, avg loss=22.678, last=none, best=none, next=1000, rate=0.00008726, load 64=490.6 milliseconds, train=4.5 seconds, 32576 images, time remaining=6.1 hours
+510: loss=22.115, avg loss=22.622, last=none, best=none, next=1000, rate=0.00008795, load 64=386.4 milliseconds, train=4.5 seconds, 32640 images, time remaining=6.1 hours
+Resizing, random_coef=1.40, batch=4, 928x736
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+511: loss=22.238, avg loss=22.583, last=none, best=none, next=1000, rate=0.00008864, load 64=365.4 milliseconds, train=2.0 seconds, 32704 images, time remaining=6.1 hours
+512: loss=21.175, avg loss=22.442, last=none, best=none, next=1000, rate=0.00008934, load 64=460.9 milliseconds, train=2.0 seconds, 32768 images, time remaining=6.1 hours
+513: loss=19.017, avg loss=22.100, last=none, best=none, next=1000, rate=0.00009004, load 64=372.4 milliseconds, train=2.0 seconds, 32832 images, time remaining=6 hours
+514: loss=20.906, avg loss=21.981, last=none, best=none, next=1000, rate=0.00009074, load 64=420.5 milliseconds, train=2.0 seconds, 32896 images, time remaining=6 hours
+515: loss=19.957, avg loss=21.778, last=none, best=none, next=1000, rate=0.00009145, load 64=364.2 milliseconds, train=2.1 seconds, 32960 images, time remaining=6 hours
+516: loss=17.219, avg loss=21.322, last=none, best=none, next=1000, rate=0.00009216, load 64=375.2 milliseconds, train=2.0 seconds, 33024 images, time remaining=6 hours
+517: loss=22.103, avg loss=21.400, last=none, best=none, next=1000, rate=0.00009288, load 64=344.1 milliseconds, train=2.1 seconds, 33088 images, time remaining=6 hours
+518: loss=21.848, avg loss=21.445, last=none, best=none, next=1000, rate=0.00009360, load 64=438.3 milliseconds, train=2.1 seconds, 33152 images, time remaining=6 hours
+519: loss=22.515, avg loss=21.552, last=none, best=none, next=1000, rate=0.00009432, load 64=335.3 milliseconds, train=2.0 seconds, 33216 images, time remaining=6 hours
+520: loss=18.266, avg loss=21.224, last=none, best=none, next=1000, rate=0.00009505, load 64=359.4 milliseconds, train=2.0 seconds, 33280 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 1024x800
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+521: loss=21.627, avg loss=21.264, last=none, best=none, next=1000, rate=0.00009578, load 64=470.3 milliseconds, train=3.3 seconds, 33344 images, time remaining=6 hours
+522: loss=21.703, avg loss=21.308, last=none, best=none, next=1000, rate=0.00009652, load 64=365.2 milliseconds, train=3.3 seconds, 33408 images, time remaining=6 hours
+523: loss=18.733, avg loss=21.050, last=none, best=none, next=1000, rate=0.00009726, load 64=385.5 milliseconds, train=3.2 seconds, 33472 images, time remaining=6 hours
+524: loss=20.150, avg loss=20.960, last=none, best=none, next=1000, rate=0.00009801, load 64=416.1 milliseconds, train=3.3 seconds, 33536 images, time remaining=6 hours
+525: loss=20.336, avg loss=20.898, last=none, best=none, next=1000, rate=0.00009876, load 64=478.6 milliseconds, train=3.3 seconds, 33600 images, time remaining=6 hours
+526: loss=21.255, avg loss=20.934, last=none, best=none, next=1000, rate=0.00009951, load 64=406.4 milliseconds, train=3.3 seconds, 33664 images, time remaining=6 hours
+527: loss=19.701, avg loss=20.810, last=none, best=none, next=1000, rate=0.00010027, load 64=385.6 milliseconds, train=3.3 seconds, 33728 images, time remaining=6 hours
+528: loss=21.903, avg loss=20.920, last=none, best=none, next=1000, rate=0.00010104, load 64=350.0 milliseconds, train=3.3 seconds, 33792 images, time remaining=6 hours
+529: loss=19.599, avg loss=20.788, last=none, best=none, next=1000, rate=0.00010180, load 64=459.4 milliseconds, train=3.3 seconds, 33856 images, time remaining=6 hours
+530: loss=18.992, avg loss=20.608, last=none, best=none, next=1000, rate=0.00010258, load 64=368.4 milliseconds, train=3.2 seconds, 33920 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 1120x864
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+531: loss=22.935, avg loss=20.841, last=none, best=none, next=1000, rate=0.00010335, load 64=312.6 milliseconds, train=3.6 seconds, 33984 images, time remaining=6 hours
+532: loss=19.506, avg loss=20.707, last=none, best=none, next=1000, rate=0.00010413, load 64=535.5 milliseconds, train=3.6 seconds, 34048 images, time remaining=6 hours
+533: loss=20.151, avg loss=20.652, last=none, best=none, next=1000, rate=0.00010492, load 64=303.2 milliseconds, train=3.6 seconds, 34112 images, time remaining=6 hours
+534: loss=21.211, avg loss=20.708, last=none, best=none, next=1000, rate=0.00010571, load 64=340.0 milliseconds, train=3.6 seconds, 34176 images, time remaining=6.1 hours
+535: loss=20.955, avg loss=20.732, last=none, best=none, next=1000, rate=0.00010650, load 64=393.0 milliseconds, train=3.6 seconds, 34240 images, time remaining=6.1 hours
+536: loss=19.615, avg loss=20.621, last=none, best=none, next=1000, rate=0.00010730, load 64=340.0 milliseconds, train=3.6 seconds, 34304 images, time remaining=6.1 hours
+537: loss=19.730, avg loss=20.531, last=none, best=none, next=1000, rate=0.00010810, load 64=365.1 milliseconds, train=3.6 seconds, 34368 images, time remaining=6.1 hours
+538: loss=18.464, avg loss=20.325, last=none, best=none, next=1000, rate=0.00010891, load 64=428.9 milliseconds, train=3.6 seconds, 34432 images, time remaining=6.1 hours
+539: loss=18.647, avg loss=20.157, last=none, best=none, next=1000, rate=0.00010972, load 64=422.3 milliseconds, train=3.6 seconds, 34496 images, time remaining=6.1 hours
+540: loss=20.823, avg loss=20.223, last=none, best=none, next=1000, rate=0.00011054, load 64=399.3 milliseconds, train=3.6 seconds, 34560 images, time remaining=6.1 hours
+Resizing, random_coef=1.40, batch=4, 736x576
+GPU #0: allocating workspace: 319.6 MiB begins at 0x148465800000
+541: loss=19.592, avg loss=20.160, last=none, best=none, next=1000, rate=0.00011136, load 64=311.1 milliseconds, train=1.2 seconds, 34624 images, time remaining=6.1 hours
+542: loss=18.026, avg loss=19.947, last=none, best=none, next=1000, rate=0.00011219, load 64=334.5 milliseconds, train=1.2 seconds, 34688 images, time remaining=6 hours
+543: loss=19.132, avg loss=19.865, last=none, best=none, next=1000, rate=0.00011302, load 64=350.4 milliseconds, train=1.2 seconds, 34752 images, time remaining=6 hours
+544: loss=19.905, avg loss=19.869, last=none, best=none, next=1000, rate=0.00011385, load 64=324.7 milliseconds, train=1.2 seconds, 34816 images, time remaining=6 hours
+545: loss=18.800, avg loss=19.762, last=none, best=none, next=1000, rate=0.00011469, load 64=424.4 milliseconds, train=1.2 seconds, 34880 images, time remaining=6 hours
+546: loss=17.566, avg loss=19.543, last=none, best=none, next=1000, rate=0.00011554, load 64=413.8 milliseconds, train=1.2 seconds, 34944 images, time remaining=6 hours
+547: loss=17.969, avg loss=19.385, last=none, best=none, next=1000, rate=0.00011638, load 64=373.4 milliseconds, train=1.2 seconds, 35008 images, time remaining=6 hours
+548: loss=19.232, avg loss=19.370, last=none, best=none, next=1000, rate=0.00011724, load 64=268.7 milliseconds, train=1.2 seconds, 35072 images, time remaining=6 hours
+549: loss=21.193, avg loss=19.552, last=none, best=none, next=1000, rate=0.00011810, load 64=391.6 milliseconds, train=1.2 seconds, 35136 images, time remaining=6 hours
+550: loss=19.890, avg loss=19.586, last=none, best=none, next=1000, rate=0.00011896, load 64=319.4 milliseconds, train=1.2 seconds, 35200 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 1152x896
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+551: loss=23.382, avg loss=19.966, last=none, best=none, next=1000, rate=0.00011983, load 64=349.1 milliseconds, train=4.1 seconds, 35264 images, time remaining=6 hours
+552: loss=22.289, avg loss=20.198, last=none, best=none, next=1000, rate=0.00012070, load 64=495.3 milliseconds, train=4.1 seconds, 35328 images, time remaining=6 hours
+553: loss=21.585, avg loss=20.337, last=none, best=none, next=1000, rate=0.00012157, load 64=389.6 milliseconds, train=4.1 seconds, 35392 images, time remaining=6 hours
+554: loss=19.522, avg loss=20.255, last=none, best=none, next=1000, rate=0.00012246, load 64=315.8 milliseconds, train=4.1 seconds, 35456 images, time remaining=6 hours
+555: loss=25.092, avg loss=20.739, last=none, best=none, next=1000, rate=0.00012334, load 64=475.3 milliseconds, train=4.2 seconds, 35520 images, time remaining=6 hours
+556: loss=19.382, avg loss=20.603, last=none, best=none, next=1000, rate=0.00012423, load 64=398.6 milliseconds, train=4.1 seconds, 35584 images, time remaining=6 hours
+557: loss=20.115, avg loss=20.554, last=none, best=none, next=1000, rate=0.00012513, load 64=367.0 milliseconds, train=4.1 seconds, 35648 images, time remaining=6 hours
+558: loss=19.807, avg loss=20.480, last=none, best=none, next=1000, rate=0.00012603, load 64=427.6 milliseconds, train=4.1 seconds, 35712 images, time remaining=6 hours
+559: loss=20.871, avg loss=20.519, last=none, best=none, next=1000, rate=0.00012694, load 64=352.3 milliseconds, train=4.1 seconds, 35776 images, time remaining=6 hours
+560: loss=22.207, avg loss=20.688, last=none, best=none, next=1000, rate=0.00012785, load 64=359.6 milliseconds, train=4.2 seconds, 35840 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 960x736
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+561: loss=22.918, avg loss=20.911, last=none, best=none, next=1000, rate=0.00012876, load 64=340.6 milliseconds, train=2.1 seconds, 35904 images, time remaining=6 hours
+562: loss=14.533, avg loss=20.273, last=none, best=none, next=1000, rate=0.00012968, load 64=364.6 milliseconds, train=2.1 seconds, 35968 images, time remaining=6 hours
+563: loss=19.728, avg loss=20.219, last=none, best=none, next=1000, rate=0.00013061, load 64=313.8 milliseconds, train=2.1 seconds, 36032 images, time remaining=6 hours
+564: loss=19.495, avg loss=20.146, last=none, best=none, next=1000, rate=0.00013154, load 64=319.6 milliseconds, train=2.1 seconds, 36096 images, time remaining=6 hours
+565: loss=20.123, avg loss=20.144, last=none, best=none, next=1000, rate=0.00013248, load 64=360.0 milliseconds, train=2.1 seconds, 36160 images, time remaining=6 hours
+566: loss=21.348, avg loss=20.264, last=none, best=none, next=1000, rate=0.00013342, load 64=294.6 milliseconds, train=2.1 seconds, 36224 images, time remaining=6 hours
+567: loss=22.259, avg loss=20.464, last=none, best=none, next=1000, rate=0.00013436, load 64=359.5 milliseconds, train=2.1 seconds, 36288 images, time remaining=6 hours
+568: loss=19.500, avg loss=20.367, last=none, best=none, next=1000, rate=0.00013531, load 64=379.6 milliseconds, train=2.1 seconds, 36352 images, time remaining=6 hours
+569: loss=18.200, avg loss=20.151, last=none, best=none, next=1000, rate=0.00013627, load 64=324.0 milliseconds, train=2.1 seconds, 36416 images, time remaining=6 hours
+570: loss=20.007, avg loss=20.136, last=none, best=none, next=1000, rate=0.00013723, load 64=399.8 milliseconds, train=2.1 seconds, 36480 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 1280x992
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+571: loss=22.755, avg loss=20.398, last=none, best=none, next=1000, rate=0.00013819, load 64=372.1 milliseconds, train=4.7 seconds, 36544 images, time remaining=6 hours
+572: loss=19.230, avg loss=20.281, last=none, best=none, next=1000, rate=0.00013916, load 64=366.2 milliseconds, train=4.7 seconds, 36608 images, time remaining=6 hours
+573: loss=20.569, avg loss=20.310, last=none, best=none, next=1000, rate=0.00014014, load 64=402.4 milliseconds, train=4.7 seconds, 36672 images, time remaining=6 hours
+574: loss=18.186, avg loss=20.098, last=none, best=none, next=1000, rate=0.00014112, load 64=451.6 milliseconds, train=4.6 seconds, 36736 images, time remaining=6 hours
+575: loss=22.110, avg loss=20.299, last=none, best=none, next=1000, rate=0.00014211, load 64=337.5 milliseconds, train=4.7 seconds, 36800 images, time remaining=6 hours
+576: loss=19.416, avg loss=20.211, last=none, best=none, next=1000, rate=0.00014310, load 64=367.2 milliseconds, train=4.7 seconds, 36864 images, time remaining=6.1 hours
+577: loss=21.105, avg loss=20.300, last=none, best=none, next=1000, rate=0.00014409, load 64=437.0 milliseconds, train=4.7 seconds, 36928 images, time remaining=6.1 hours
+578: loss=20.652, avg loss=20.335, last=none, best=none, next=1000, rate=0.00014510, load 64=402.2 milliseconds, train=4.7 seconds, 36992 images, time remaining=6.1 hours
+579: loss=19.534, avg loss=20.255, last=none, best=none, next=1000, rate=0.00014610, load 64=326.0 milliseconds, train=4.7 seconds, 37056 images, time remaining=6.1 hours
+580: loss=20.852, avg loss=20.315, last=none, best=none, next=1000, rate=0.00014711, load 64=450.9 milliseconds, train=4.7 seconds, 37120 images, time remaining=6.1 hours
+Resizing, random_coef=1.40, batch=4, 1280x992
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+581: loss=20.831, avg loss=20.366, last=none, best=none, next=1000, rate=0.00014813, load 64=362.7 milliseconds, train=4.7 seconds, 37184 images, time remaining=6.1 hours
+582: loss=19.668, avg loss=20.297, last=none, best=none, next=1000, rate=0.00014915, load 64=351.5 milliseconds, train=4.7 seconds, 37248 images, time remaining=6.1 hours
+583: loss=18.355, avg loss=20.102, last=none, best=none, next=1000, rate=0.00015018, load 64=322.8 milliseconds, train=4.7 seconds, 37312 images, time remaining=6.1 hours
+584: loss=18.589, avg loss=19.951, last=none, best=none, next=1000, rate=0.00015121, load 64=390.9 milliseconds, train=4.7 seconds, 37376 images, time remaining=6.1 hours
+585: loss=21.493, avg loss=20.105, last=none, best=none, next=1000, rate=0.00015225, load 64=540.3 milliseconds, train=4.7 seconds, 37440 images, time remaining=6.1 hours
+586: loss=21.527, avg loss=20.247, last=none, best=none, next=1000, rate=0.00015330, load 64=397.2 milliseconds, train=4.7 seconds, 37504 images, time remaining=6.1 hours
+587: loss=18.483, avg loss=20.071, last=none, best=none, next=1000, rate=0.00015435, load 64=411.4 milliseconds, train=4.7 seconds, 37568 images, time remaining=6.1 hours
+588: loss=16.969, avg loss=19.761, last=none, best=none, next=1000, rate=0.00015540, load 64=411.9 milliseconds, train=4.6 seconds, 37632 images, time remaining=6.1 hours
+589: loss=18.567, avg loss=19.641, last=none, best=none, next=1000, rate=0.00015646, load 64=375.6 milliseconds, train=4.6 seconds, 37696 images, time remaining=6.1 hours
+590: loss=17.654, avg loss=19.443, last=none, best=none, next=1000, rate=0.00015753, load 64=390.7 milliseconds, train=4.7 seconds, 37760 images, time remaining=6.1 hours
+Resizing, random_coef=1.40, batch=4, 736x576
+GPU #0: allocating workspace: 319.6 MiB begins at 0x14852c200000
+591: loss=21.767, avg loss=19.675, last=none, best=none, next=1000, rate=0.00015860, load 64=334.0 milliseconds, train=1.3 seconds, 37824 images, time remaining=6.1 hours
+592: loss=18.309, avg loss=19.538, last=none, best=none, next=1000, rate=0.00015967, load 64=342.5 milliseconds, train=1.2 seconds, 37888 images, time remaining=6.1 hours
+593: loss=16.323, avg loss=19.217, last=none, best=none, next=1000, rate=0.00016075, load 64=366.5 milliseconds, train=1.2 seconds, 37952 images, time remaining=6.1 hours
+594: loss=20.228, avg loss=19.318, last=none, best=none, next=1000, rate=0.00016184, load 64=332.2 milliseconds, train=1.2 seconds, 38016 images, time remaining=6.1 hours
+595: loss=17.988, avg loss=19.185, last=none, best=none, next=1000, rate=0.00016293, load 64=406.1 milliseconds, train=1.2 seconds, 38080 images, time remaining=6.1 hours
+596: loss=17.471, avg loss=19.014, last=none, best=none, next=1000, rate=0.00016403, load 64=322.7 milliseconds, train=1.2 seconds, 38144 images, time remaining=6.1 hours
+597: loss=20.263, avg loss=19.139, last=none, best=none, next=1000, rate=0.00016514, load 64=379.5 milliseconds, train=1.2 seconds, 38208 images, time remaining=6.1 hours
+598: loss=19.896, avg loss=19.214, last=none, best=none, next=1000, rate=0.00016624, load 64=354.4 milliseconds, train=1.2 seconds, 38272 images, time remaining=6.1 hours
+599: loss=19.266, avg loss=19.219, last=none, best=none, next=1000, rate=0.00016736, load 64=273.2 milliseconds, train=1.2 seconds, 38336 images, time remaining=6.1 hours
+600: loss=18.205, avg loss=19.118, last=none, best=none, next=1000, rate=0.00016848, load 64=334.8 milliseconds, train=1.2 seconds, 38400 images, time remaining=6.1 hours
+Saving weights to /workspace/.cache/splits/combined_last.weights
+Resizing, random_coef=1.40, batch=4, 928x704
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+601: loss=20.759, avg loss=19.282, last=none, best=none, next=1000, rate=0.00016961, load 64=356.7 milliseconds, train=2.0 seconds, 38464 images, time remaining=6.1 hours
+602: loss=19.392, avg loss=19.293, last=none, best=none, next=1000, rate=0.00017074, load 64=304.9 milliseconds, train=2.0 seconds, 38528 images, time remaining=6.1 hours
+603: loss=16.891, avg loss=19.053, last=none, best=none, next=1000, rate=0.00017187, load 64=370.5 milliseconds, train=2.0 seconds, 38592 images, time remaining=6.1 hours
+604: loss=18.650, avg loss=19.013, last=none, best=none, next=1000, rate=0.00017302, load 64=379.7 milliseconds, train=2.0 seconds, 38656 images, time remaining=6.1 hours
+605: loss=21.670, avg loss=19.278, last=none, best=none, next=1000, rate=0.00017417, load 64=354.3 milliseconds, train=2.0 seconds, 38720 images, time remaining=6.1 hours
+606: loss=15.967, avg loss=18.947, last=none, best=none, next=1000, rate=0.00017532, load 64=304.4 milliseconds, train=2.0 seconds, 38784 images, time remaining=6 hours
+607: loss=15.444, avg loss=18.597, last=none, best=none, next=1000, rate=0.00017648, load 64=369.2 milliseconds, train=2.0 seconds, 38848 images, time remaining=6 hours
+608: loss=15.264, avg loss=18.264, last=none, best=none, next=1000, rate=0.00017765, load 64=309.2 milliseconds, train=2.0 seconds, 38912 images, time remaining=6 hours
+609: loss=18.117, avg loss=18.249, last=none, best=none, next=1000, rate=0.00017882, load 64=334.0 milliseconds, train=2.0 seconds, 38976 images, time remaining=6 hours
+610: loss=19.014, avg loss=18.326, last=none, best=none, next=1000, rate=0.00018000, load 64=299.9 milliseconds, train=2.0 seconds, 39040 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 1280x992
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+611: loss=21.636, avg loss=18.657, last=none, best=none, next=1000, rate=0.00018118, load 64=431.7 milliseconds, train=4.7 seconds, 39104 images, time remaining=6 hours
+612: loss=17.458, avg loss=18.537, last=none, best=none, next=1000, rate=0.00018237, load 64=355.4 milliseconds, train=4.7 seconds, 39168 images, time remaining=6.1 hours
+613: loss=19.464, avg loss=18.629, last=none, best=none, next=1000, rate=0.00018356, load 64=402.6 milliseconds, train=4.7 seconds, 39232 images, time remaining=6.1 hours
+614: loss=20.088, avg loss=18.775, last=none, best=none, next=1000, rate=0.00018476, load 64=342.3 milliseconds, train=4.7 seconds, 39296 images, time remaining=6.1 hours
+615: loss=19.020, avg loss=18.800, last=none, best=none, next=1000, rate=0.00018597, load 64=328.2 milliseconds, train=4.7 seconds, 39360 images, time remaining=6.1 hours
+616: loss=18.140, avg loss=18.734, last=none, best=none, next=1000, rate=0.00018718, load 64=360.8 milliseconds, train=4.7 seconds, 39424 images, time remaining=6.1 hours
+617: loss=20.729, avg loss=18.933, last=none, best=none, next=1000, rate=0.00018840, load 64=333.6 milliseconds, train=4.7 seconds, 39488 images, time remaining=6.1 hours
+618: loss=18.779, avg loss=18.918, last=none, best=none, next=1000, rate=0.00018963, load 64=472.0 milliseconds, train=4.7 seconds, 39552 images, time remaining=6.1 hours
+619: loss=17.797, avg loss=18.806, last=none, best=none, next=1000, rate=0.00019086, load 64=376.5 milliseconds, train=4.7 seconds, 39616 images, time remaining=6.1 hours
+620: loss=17.521, avg loss=18.677, last=none, best=none, next=1000, rate=0.00019209, load 64=312.8 milliseconds, train=4.6 seconds, 39680 images, time remaining=6.1 hours
+Resizing, random_coef=1.40, batch=4, 896x704
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+621: loss=17.930, avg loss=18.603, last=none, best=none, next=1000, rate=0.00019333, load 64=440.6 milliseconds, train=1.9 seconds, 39744 images, time remaining=6.1 hours
+622: loss=18.873, avg loss=18.630, last=none, best=none, next=1000, rate=0.00019458, load 64=339.6 milliseconds, train=1.9 seconds, 39808 images, time remaining=6.1 hours
+623: loss=17.372, avg loss=18.504, last=none, best=none, next=1000, rate=0.00019584, load 64=310.2 milliseconds, train=1.9 seconds, 39872 images, time remaining=6.1 hours
+624: loss=18.140, avg loss=18.468, last=none, best=none, next=1000, rate=0.00019710, load 64=324.0 milliseconds, train=1.9 seconds, 39936 images, time remaining=6.1 hours
+625: loss=18.093, avg loss=18.430, last=none, best=none, next=1000, rate=0.00019836, load 64=306.0 milliseconds, train=1.9 seconds, 40000 images, time remaining=6.1 hours
+626: loss=17.237, avg loss=18.311, last=none, best=none, next=1000, rate=0.00019964, load 64=334.6 milliseconds, train=1.9 seconds, 40064 images, time remaining=6.1 hours
+627: loss=19.110, avg loss=18.391, last=none, best=none, next=1000, rate=0.00020092, load 64=409.5 milliseconds, train=1.9 seconds, 40128 images, time remaining=6.1 hours
+628: loss=19.523, avg loss=18.504, last=none, best=none, next=1000, rate=0.00020220, load 64=346.0 milliseconds, train=1.9 seconds, 40192 images, time remaining=6.1 hours
+629: loss=15.985, avg loss=18.252, last=none, best=none, next=1000, rate=0.00020349, load 64=344.6 milliseconds, train=1.9 seconds, 40256 images, time remaining=6.1 hours
+630: loss=15.384, avg loss=17.965, last=none, best=none, next=1000, rate=0.00020479, load 64=356.1 milliseconds, train=1.9 seconds, 40320 images, time remaining=6.1 hours
+Resizing, random_coef=1.40, batch=4, 864x672
+GPU #0: allocating workspace: 434.4 MiB begins at 0x1484e8200000
+631: loss=16.556, avg loss=17.824, last=none, best=none, next=1000, rate=0.00020609, load 64=299.2 milliseconds, train=1.7 seconds, 40384 images, time remaining=6 hours
+632: loss=16.736, avg loss=17.715, last=none, best=none, next=1000, rate=0.00020740, load 64=349.8 milliseconds, train=1.7 seconds, 40448 images, time remaining=6 hours
+633: loss=17.188, avg loss=17.663, last=none, best=none, next=1000, rate=0.00020872, load 64=316.4 milliseconds, train=1.7 seconds, 40512 images, time remaining=6 hours
+634: loss=15.030, avg loss=17.399, last=none, best=none, next=1000, rate=0.00021004, load 64=360.2 milliseconds, train=1.7 seconds, 40576 images, time remaining=6 hours
+635: loss=16.546, avg loss=17.314, last=none, best=none, next=1000, rate=0.00021137, load 64=363.1 milliseconds, train=1.7 seconds, 40640 images, time remaining=6 hours
+636: loss=16.357, avg loss=17.218, last=none, best=none, next=1000, rate=0.00021270, load 64=315.2 milliseconds, train=1.6 seconds, 40704 images, time remaining=6 hours
+637: loss=13.842, avg loss=16.881, last=none, best=none, next=1000, rate=0.00021404, load 64=295.5 milliseconds, train=1.6 seconds, 40768 images, time remaining=6 hours
+638: loss=14.841, avg loss=16.677, last=none, best=none, next=1000, rate=0.00021539, load 64=335.9 milliseconds, train=1.6 seconds, 40832 images, time remaining=6 hours
+639: loss=16.782, avg loss=16.687, last=none, best=none, next=1000, rate=0.00021674, load 64=359.4 milliseconds, train=1.6 seconds, 40896 images, time remaining=6 hours
+640: loss=16.638, avg loss=16.682, last=none, best=none, next=1000, rate=0.00021810, load 64=385.2 milliseconds, train=1.7 seconds, 40960 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 896x704
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+641: loss=15.194, avg loss=16.534, last=none, best=none, next=1000, rate=0.00021947, load 64=292.5 milliseconds, train=1.9 seconds, 41024 images, time remaining=6 hours
+642: loss=16.664, avg loss=16.547, last=none, best=none, next=1000, rate=0.00022084, load 64=292.6 milliseconds, train=1.9 seconds, 41088 images, time remaining=6 hours
+643: loss=16.487, avg loss=16.541, last=none, best=none, next=1000, rate=0.00022222, load 64=238.0 milliseconds, train=1.9 seconds, 41152 images, time remaining=6 hours
+644: loss=13.473, avg loss=16.234, last=none, best=none, next=1000, rate=0.00022361, load 64=319.5 milliseconds, train=1.9 seconds, 41216 images, time remaining=6 hours
+645: loss=16.198, avg loss=16.230, last=none, best=none, next=1000, rate=0.00022500, load 64=314.0 milliseconds, train=1.9 seconds, 41280 images, time remaining=6 hours
+646: loss=14.915, avg loss=16.099, last=none, best=none, next=1000, rate=0.00022640, load 64=299.2 milliseconds, train=1.9 seconds, 41344 images, time remaining=6 hours
+647: loss=13.701, avg loss=15.859, last=none, best=none, next=1000, rate=0.00022780, load 64=306.9 milliseconds, train=1.9 seconds, 41408 images, time remaining=6 hours
+648: loss=16.179, avg loss=15.891, last=none, best=none, next=1000, rate=0.00022922, load 64=368.9 milliseconds, train=1.9 seconds, 41472 images, time remaining=6 hours
+649: loss=14.711, avg loss=15.773, last=none, best=none, next=1000, rate=0.00023063, load 64=375.7 milliseconds, train=1.9 seconds, 41536 images, time remaining=6 hours
+650: loss=16.138, avg loss=15.810, last=none, best=none, next=1000, rate=0.00023206, load 64=282.0 milliseconds, train=1.9 seconds, 41600 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 1056x832
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+651: loss=15.121, avg loss=15.741, last=none, best=none, next=1000, rate=0.00023349, load 64=317.7 milliseconds, train=3.4 seconds, 41664 images, time remaining=6 hours
+652: loss=18.135, avg loss=15.980, last=none, best=none, next=1000, rate=0.00023493, load 64=342.8 milliseconds, train=3.4 seconds, 41728 images, time remaining=6 hours
+653: loss=16.650, avg loss=16.047, last=none, best=none, next=1000, rate=0.00023637, load 64=385.9 milliseconds, train=3.3 seconds, 41792 images, time remaining=6 hours
+654: loss=15.154, avg loss=15.958, last=none, best=none, next=1000, rate=0.00023782, load 64=329.1 milliseconds, train=3.4 seconds, 41856 images, time remaining=6 hours
+655: loss=17.374, avg loss=16.099, last=none, best=none, next=1000, rate=0.00023928, load 64=301.4 milliseconds, train=3.4 seconds, 41920 images, time remaining=6 hours
+656: loss=15.361, avg loss=16.026, last=none, best=none, next=1000, rate=0.00024075, load 64=351.7 milliseconds, train=3.4 seconds, 41984 images, time remaining=6 hours
+657: loss=16.129, avg loss=16.036, last=none, best=none, next=1000, rate=0.00024222, load 64=358.1 milliseconds, train=3.4 seconds, 42048 images, time remaining=6 hours
+658: loss=16.547, avg loss=16.087, last=none, best=none, next=1000, rate=0.00024370, load 64=447.8 milliseconds, train=3.4 seconds, 42112 images, time remaining=6 hours
+659: loss=15.050, avg loss=15.983, last=none, best=none, next=1000, rate=0.00024518, load 64=293.6 milliseconds, train=3.4 seconds, 42176 images, time remaining=6 hours
+660: loss=15.698, avg loss=15.955, last=none, best=none, next=1000, rate=0.00024667, load 64=315.5 milliseconds, train=3.3 seconds, 42240 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 1088x832
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+661: loss=17.237, avg loss=16.083, last=none, best=none, next=1000, rate=0.00024817, load 64=450.6 milliseconds, train=3.4 seconds, 42304 images, time remaining=6 hours
+662: loss=15.293, avg loss=16.004, last=none, best=none, next=1000, rate=0.00024968, load 64=374.2 milliseconds, train=3.4 seconds, 42368 images, time remaining=6 hours
+663: loss=16.234, avg loss=16.027, last=none, best=none, next=1000, rate=0.00025119, load 64=290.9 milliseconds, train=3.4 seconds, 42432 images, time remaining=6 hours
+664: loss=15.991, avg loss=16.024, last=none, best=none, next=1000, rate=0.00025271, load 64=391.1 milliseconds, train=3.4 seconds, 42496 images, time remaining=6 hours
+665: loss=17.510, avg loss=16.172, last=none, best=none, next=1000, rate=0.00025423, load 64=355.8 milliseconds, train=3.4 seconds, 42560 images, time remaining=6 hours
+666: loss=15.534, avg loss=16.108, last=none, best=none, next=1000, rate=0.00025576, load 64=324.7 milliseconds, train=3.4 seconds, 42624 images, time remaining=6 hours
+667: loss=14.290, avg loss=15.926, last=none, best=none, next=1000, rate=0.00025730, load 64=415.9 milliseconds, train=3.4 seconds, 42688 images, time remaining=6 hours
+668: loss=16.778, avg loss=16.012, last=none, best=none, next=1000, rate=0.00025885, load 64=337.9 milliseconds, train=3.4 seconds, 42752 images, time remaining=6 hours
+669: loss=13.935, avg loss=15.804, last=none, best=none, next=1000, rate=0.00026040, load 64=305.8 milliseconds, train=3.4 seconds, 42816 images, time remaining=6 hours
+670: loss=15.498, avg loss=15.773, last=none, best=none, next=1000, rate=0.00026196, load 64=366.9 milliseconds, train=3.4 seconds, 42880 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 736x576
+GPU #0: allocating workspace: 319.6 MiB begins at 0x1486bc000000
+671: loss=14.873, avg loss=15.683, last=none, best=none, next=1000, rate=0.00026353, load 64=280.4 milliseconds, train=1.2 seconds, 42944 images, time remaining=6 hours
+672: loss=16.417, avg loss=15.757, last=none, best=none, next=1000, rate=0.00026511, load 64=298.6 milliseconds, train=1.2 seconds, 43008 images, time remaining=6 hours
+673: loss=15.311, avg loss=15.712, last=none, best=none, next=1000, rate=0.00026669, load 64=299.2 milliseconds, train=1.2 seconds, 43072 images, time remaining=6 hours
+674: loss=14.471, avg loss=15.588, last=none, best=none, next=1000, rate=0.00026828, load 64=287.5 milliseconds, train=1.2 seconds, 43136 images, time remaining=6 hours
+675: loss=15.041, avg loss=15.533, last=none, best=none, next=1000, rate=0.00026987, load 64=345.3 milliseconds, train=1.2 seconds, 43200 images, time remaining=6 hours
+676: loss=13.017, avg loss=15.282, last=none, best=none, next=1000, rate=0.00027148, load 64=315.1 milliseconds, train=1.2 seconds, 43264 images, time remaining=6 hours
+677: loss=15.411, avg loss=15.295, last=none, best=none, next=1000, rate=0.00027309, load 64=314.5 milliseconds, train=1.2 seconds, 43328 images, time remaining=5.9 hours
+678: loss=16.104, avg loss=15.376, last=none, best=none, next=1000, rate=0.00027470, load 64=268.1 milliseconds, train=1.2 seconds, 43392 images, time remaining=5.9 hours
+679: loss=18.160, avg loss=15.654, last=none, best=none, next=1000, rate=0.00027633, load 64=323.7 milliseconds, train=1.2 seconds, 43456 images, time remaining=5.9 hours
+680: loss=16.238, avg loss=15.712, last=none, best=none, next=1000, rate=0.00027796, load 64=329.3 milliseconds, train=1.3 seconds, 43520 images, time remaining=5.9 hours
+Resizing, random_coef=1.40, batch=4, 1376x1056
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+681: loss=29.872, avg loss=17.128, last=none, best=none, next=1000, rate=0.00027960, load 64=436.0 milliseconds, train=5.1 seconds, 43584 images, time remaining=6 hours
+682: loss=16.807, avg loss=17.096, last=none, best=none, next=1000, rate=0.00028124, load 64=451.3 milliseconds, train=5.1 seconds, 43648 images, time remaining=6 hours
+683: loss=20.678, avg loss=17.454, last=none, best=none, next=1000, rate=0.00028290, load 64=423.3 milliseconds, train=5.2 seconds, 43712 images, time remaining=6 hours
+684: loss=26.274, avg loss=18.336, last=none, best=none, next=1000, rate=0.00028456, load 64=405.1 milliseconds, train=5.2 seconds, 43776 images, time remaining=6 hours
+685: loss=16.320, avg loss=18.135, last=none, best=none, next=1000, rate=0.00028622, load 64=377.4 milliseconds, train=5.1 seconds, 43840 images, time remaining=6 hours
+686: loss=22.995, avg loss=18.621, last=none, best=none, next=1000, rate=0.00028790, load 64=375.5 milliseconds, train=5.2 seconds, 43904 images, time remaining=6 hours
+687: loss=21.735, avg loss=18.932, last=none, best=none, next=1000, rate=0.00028958, load 64=415.7 milliseconds, train=5.1 seconds, 43968 images, time remaining=6 hours
+688: loss=20.997, avg loss=19.139, last=none, best=none, next=1000, rate=0.00029127, load 64=379.3 milliseconds, train=5.2 seconds, 44032 images, time remaining=6 hours
+689: loss=19.374, avg loss=19.162, last=none, best=none, next=1000, rate=0.00029297, load 64=531.4 milliseconds, train=5.1 seconds, 44096 images, time remaining=6 hours
+690: loss=18.367, avg loss=19.083, last=none, best=none, next=1000, rate=0.00029467, load 64=365.8 milliseconds, train=5.2 seconds, 44160 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 896x704
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+691: loss=22.055, avg loss=19.380, last=none, best=none, next=1000, rate=0.00029638, load 64=288.6 milliseconds, train=1.9 seconds, 44224 images, time remaining=6 hours
+692: loss=19.390, avg loss=19.381, last=none, best=none, next=1000, rate=0.00029810, load 64=303.7 milliseconds, train=1.9 seconds, 44288 images, time remaining=6 hours
+693: loss=19.359, avg loss=19.379, last=none, best=none, next=1000, rate=0.00029983, load 64=380.0 milliseconds, train=1.9 seconds, 44352 images, time remaining=6 hours
+694: loss=19.165, avg loss=19.357, last=none, best=none, next=1000, rate=0.00030157, load 64=420.6 milliseconds, train=1.9 seconds, 44416 images, time remaining=6 hours
+695: loss=18.753, avg loss=19.297, last=none, best=none, next=1000, rate=0.00030331, load 64=278.8 milliseconds, train=1.9 seconds, 44480 images, time remaining=6 hours
+696: loss=18.133, avg loss=19.181, last=none, best=none, next=1000, rate=0.00030506, load 64=323.0 milliseconds, train=1.9 seconds, 44544 images, time remaining=6 hours
+697: loss=17.680, avg loss=19.030, last=none, best=none, next=1000, rate=0.00030681, load 64=385.6 milliseconds, train=1.9 seconds, 44608 images, time remaining=6 hours
+698: loss=16.798, avg loss=18.807, last=none, best=none, next=1000, rate=0.00030858, load 64=273.3 milliseconds, train=1.9 seconds, 44672 images, time remaining=6 hours
+699: loss=16.868, avg loss=18.613, last=none, best=none, next=1000, rate=0.00031035, load 64=273.6 milliseconds, train=1.9 seconds, 44736 images, time remaining=6 hours
+700: loss=17.025, avg loss=18.454, last=none, best=none, next=1000, rate=0.00031213, load 64=329.7 milliseconds, train=1.9 seconds, 44800 images, time remaining=6 hours
+Saving weights to /workspace/.cache/splits/combined_last.weights
+Resizing, random_coef=1.40, batch=4, 1184x928
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+701: loss=18.278, avg loss=18.437, last=none, best=none, next=1000, rate=0.00031392, load 64=338.3 milliseconds, train=3.9 seconds, 44864 images, time remaining=6 hours
+702: loss=18.446, avg loss=18.438, last=none, best=none, next=1000, rate=0.00031571, load 64=345.3 milliseconds, train=3.9 seconds, 44928 images, time remaining=6 hours
+703: loss=17.391, avg loss=18.333, last=none, best=none, next=1000, rate=0.00031752, load 64=418.5 milliseconds, train=3.9 seconds, 44992 images, time remaining=6 hours
+704: loss=18.411, avg loss=18.341, last=none, best=none, next=1000, rate=0.00031933, load 64=482.3 milliseconds, train=3.9 seconds, 45056 images, time remaining=6 hours
+705: loss=19.258, avg loss=18.433, last=none, best=none, next=1000, rate=0.00032114, load 64=356.1 milliseconds, train=3.9 seconds, 45120 images, time remaining=6 hours
+706: loss=17.128, avg loss=18.302, last=none, best=none, next=1000, rate=0.00032297, load 64=438.5 milliseconds, train=3.9 seconds, 45184 images, time remaining=6 hours
+707: loss=17.139, avg loss=18.186, last=none, best=none, next=1000, rate=0.00032480, load 64=402.3 milliseconds, train=3.9 seconds, 45248 images, time remaining=6 hours
+708: loss=18.120, avg loss=18.179, last=none, best=none, next=1000, rate=0.00032665, load 64=320.9 milliseconds, train=3.9 seconds, 45312 images, time remaining=6 hours
+709: loss=16.955, avg loss=18.057, last=none, best=none, next=1000, rate=0.00032849, load 64=331.2 milliseconds, train=3.9 seconds, 45376 images, time remaining=6 hours
+710: loss=16.915, avg loss=17.943, last=none, best=none, next=1000, rate=0.00033035, load 64=361.1 milliseconds, train=3.9 seconds, 45440 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 960x736
+GPU #0: allocating workspace: 4.3 GiB begins at 0x1481d8000000
+711: loss=16.654, avg loss=17.814, last=none, best=none, next=1000, rate=0.00033222, load 64=506.7 milliseconds, train=2.1 seconds, 45504 images, time remaining=6 hours
+712: loss=16.348, avg loss=17.667, last=none, best=none, next=1000, rate=0.00033409, load 64=294.6 milliseconds, train=2.1 seconds, 45568 images, time remaining=6 hours
+713: loss=18.226, avg loss=17.723, last=none, best=none, next=1000, rate=0.00033597, load 64=628.8 milliseconds, train=2.1 seconds, 45632 images, time remaining=6 hours
+714: loss=17.451, avg loss=17.696, last=none, best=none, next=1000, rate=0.00033786, load 64=350.5 milliseconds, train=2.1 seconds, 45696 images, time remaining=6 hours
+715: loss=16.190, avg loss=17.545, last=none, best=none, next=1000, rate=0.00033976, load 64=415.3 milliseconds, train=2.1 seconds, 45760 images, time remaining=6 hours
+716: loss=15.827, avg loss=17.373, last=none, best=none, next=1000, rate=0.00034166, load 64=323.9 milliseconds, train=2.1 seconds, 45824 images, time remaining=6 hours
+717: loss=15.250, avg loss=17.161, last=none, best=none, next=1000, rate=0.00034357, load 64=413.4 milliseconds, train=2.1 seconds, 45888 images, time remaining=6 hours
+718: loss=18.626, avg loss=17.308, last=none, best=none, next=1000, rate=0.00034549, load 64=344.8 milliseconds, train=2.1 seconds, 45952 images, time remaining=6 hours
+719: loss=14.626, avg loss=17.039, last=none, best=none, next=1000, rate=0.00034742, load 64=292.7 milliseconds, train=2.1 seconds, 46016 images, time remaining=6 hours
+720: loss=15.952, avg loss=16.931, last=none, best=none, next=1000, rate=0.00034936, load 64=360.5 milliseconds, train=2.1 seconds, 46080 images, time remaining=6 hours
+Resizing, random_coef=1.40, batch=4, 768x608
+GPU #0: allocating workspace: 351.1 MiB begins at 0x148413400000
+721: loss=13.799, avg loss=16.617, last=none, best=none, next=1000, rate=0.00035131, load 64=308.8 milliseconds, train=1.4 seconds, 46144 images, time remaining=6 hours
+722: loss=16.424, avg loss=16.598, last=none, best=none, next=1000, rate=0.00035326, load 64=331.3 milliseconds, train=1.4 seconds, 46208 images, time remaining=6 hours
+723: loss=15.549, avg loss=16.493, last=none, best=none, next=1000, rate=0.00035522, load 64=253.6 milliseconds, train=1.4 seconds, 46272 images, time remaining=6 hours
+724: loss=15.877, avg loss=16.432, last=none, best=none, next=1000, rate=0.00035719, load 64=295.0 milliseconds, train=1.4 seconds, 46336 images, time remaining=5.9 hours
+725: loss=14.867, avg loss=16.275, last=none, best=none, next=1000, rate=0.00035917, load 64=355.7 milliseconds, train=1.4 seconds, 46400 images, time remaining=5.9 hours
+726: loss=14.373, avg loss=16.085, last=none, best=none, next=1000, rate=0.00036115, load 64=290.8 milliseconds, train=1.4 seconds, 46464 images, time remaining=5.9 hours
+727: loss=14.101, avg loss=15.887, last=none, best=none, next=1000, rate=0.00036315, load 64=384.5 milliseconds, train=1.4 seconds, 46528 images, time remaining=5.9 hours
+728: loss=13.122, avg loss=15.610, last=none, best=none, next=1000, rate=0.00036515, load 64=263.0 milliseconds, train=1.4 seconds, 46592 images, time remaining=5.9 hours
+729: loss=13.404, avg loss=15.389, last=none, best=none, next=1000, rate=0.00036716, load 64=306.9 milliseconds, train=1.4 seconds, 46656 images, time remaining=5.9 hours
+730: loss=13.772, avg loss=15.228, last=none, best=none, next=1000, rate=0.00036918, load 64=278.5 milliseconds, train=1.4 seconds, 46720 images, time remaining=5.9 hours
+Resizing, random_coef=1.40, batch=4, 960x736
+GPU #0: allocating workspace: 4.3 GiB begins at 0x148588600000
+731: loss=14.089, avg loss=15.114, last=none, best=none, next=1000, rate=0.00037120, load 64=325.1 milliseconds, train=2.1 seconds, 46784 images, time remaining=5.9 hours
+732: loss=14.947, avg loss=15.097, last=none, best=none, next=1000, rate=0.00037324, load 64=399.8 milliseconds, train=2.1 seconds, 46848 images, time remaining=5.9 hours
+733: loss=15.137, avg loss=15.101, last=none, best=none, next=1000, rate=0.00037528, load 64=354.7 milliseconds, train=2.1 seconds, 46912 images, time remaining=5.9 hours
+734: loss=14.152, avg loss=15.006, last=none, best=none, next=1000, rate=0.00037734, load 64=405.0 milliseconds, train=2.1 seconds, 46976 images, time remaining=5.9 hours
+735: loss=16.157, avg loss=15.121, last=none, best=none, next=1000, rate=0.00037940, load 64=395.8 milliseconds, train=2.1 seconds, 47040 images, time remaining=5.9 hours
+736: loss=15.529, avg loss=15.162, last=none, best=none, next=1000, rate=0.00038146, load 64=309.7 milliseconds, train=2.1 seconds, 47104 images, time remaining=5.9 hours
+737: loss=14.711, avg loss=15.117, last=none, best=none, next=1000, rate=0.00038354, load 64=304.2 milliseconds, train=2.1 seconds, 47168 images, time remaining=5.9 hours
+738: loss=14.372, avg loss=15.042, last=none, best=none, next=1000, rate=0.00038563, load 64=450.1 milliseconds, train=2.1 seconds, 47232 images, time remaining=5.9 hours
+739: loss=14.569, avg loss=14.995, last=none, best=none, next=1000, rate=0.00038772, load 64=278.9 milliseconds, train=2.1 seconds, 47296 images, time remaining=5.9 hours
+740: loss=14.260, avg loss=14.922, last=none, best=none, next=1000, rate=0.00038983, load 64=291.8 milliseconds, train=2.1 seconds, 47360 images, time remaining=5.9 hours
+Resizing, random_coef=1.40, batch=4, 1184x928
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+741: loss=17.807, avg loss=15.210, last=none, best=none, next=1000, rate=0.00039194, load 64=459.0 milliseconds, train=3.9 seconds, 47424 images, time remaining=5.9 hours
+742: loss=15.748, avg loss=15.264, last=none, best=none, next=1000, rate=0.00039406, load 64=471.1 milliseconds, train=3.9 seconds, 47488 images, time remaining=5.9 hours
+743: loss=14.760, avg loss=15.213, last=none, best=none, next=1000, rate=0.00039619, load 64=329.9 milliseconds, train=3.9 seconds, 47552 images, time remaining=5.9 hours
+744: loss=14.632, avg loss=15.155, last=none, best=none, next=1000, rate=0.00039832, load 64=358.3 milliseconds, train=3.9 seconds, 47616 images, time remaining=5.9 hours
+745: loss=14.333, avg loss=15.073, last=none, best=none, next=1000, rate=0.00040047, load 64=331.9 milliseconds, train=3.9 seconds, 47680 images, time remaining=5.9 hours
+746: loss=13.592, avg loss=14.925, last=none, best=none, next=1000, rate=0.00040262, load 64=438.3 milliseconds, train=3.9 seconds, 47744 images, time remaining=5.9 hours
+747: loss=13.813, avg loss=14.814, last=none, best=none, next=1000, rate=0.00040479, load 64=345.1 milliseconds, train=3.9 seconds, 47808 images, time remaining=5.9 hours
+748: loss=15.286, avg loss=14.861, last=none, best=none, next=1000, rate=0.00040696, load 64=323.3 milliseconds, train=3.9 seconds, 47872 images, time remaining=5.9 hours
+749: loss=13.366, avg loss=14.711, last=none, best=none, next=1000, rate=0.00040914, load 64=404.4 milliseconds, train=3.9 seconds, 47936 images, time remaining=5.9 hours
+750: loss=15.231, avg loss=14.763, last=none, best=none, next=1000, rate=0.00041133, load 64=429.1 milliseconds, train=3.9 seconds, 48000 images, time remaining=5.9 hours
+Resizing, random_coef=1.40, batch=4, 992x768
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+751: loss=15.519, avg loss=14.839, last=none, best=none, next=1000, rate=0.00041353, load 64=260.3 milliseconds, train=3.2 seconds, 48064 images, time remaining=5.9 hours
+752: loss=15.886, avg loss=14.944, last=none, best=none, next=1000, rate=0.00041573, load 64=340.8 milliseconds, train=3.2 seconds, 48128 images, time remaining=5.9 hours
+753: loss=14.700, avg loss=14.919, last=none, best=none, next=1000, rate=0.00041795, load 64=547.2 milliseconds, train=3.2 seconds, 48192 images, time remaining=5.9 hours
+754: loss=13.591, avg loss=14.786, last=none, best=none, next=1000, rate=0.00042017, load 64=324.8 milliseconds, train=3.2 seconds, 48256 images, time remaining=5.9 hours
+755: loss=12.910, avg loss=14.599, last=none, best=none, next=1000, rate=0.00042241, load 64=277.0 milliseconds, train=3.2 seconds, 48320 images, time remaining=5.9 hours
+756: loss=15.422, avg loss=14.681, last=none, best=none, next=1000, rate=0.00042465, load 64=351.9 milliseconds, train=3.2 seconds, 48384 images, time remaining=5.9 hours
+757: loss=13.753, avg loss=14.588, last=none, best=none, next=1000, rate=0.00042690, load 64=417.4 milliseconds, train=3.2 seconds, 48448 images, time remaining=5.9 hours
+758: loss=13.839, avg loss=14.513, last=none, best=none, next=1000, rate=0.00042916, load 64=378.2 milliseconds, train=3.2 seconds, 48512 images, time remaining=5.9 hours
+759: loss=15.635, avg loss=14.626, last=none, best=none, next=1000, rate=0.00043143, load 64=294.4 milliseconds, train=3.2 seconds, 48576 images, time remaining=5.9 hours
+760: loss=13.504, avg loss=14.513, last=none, best=none, next=1000, rate=0.00043371, load 64=354.9 milliseconds, train=3.2 seconds, 48640 images, time remaining=5.9 hours
+Resizing, random_coef=1.40, batch=4, 736x576
+GPU #0: allocating workspace: 319.6 MiB begins at 0x1484eca00000
+761: loss=12.237, avg loss=14.286, last=none, best=none, next=1000, rate=0.00043600, load 64=288.6 milliseconds, train=1.2 seconds, 48704 images, time remaining=5.9 hours
+762: loss=15.074, avg loss=14.365, last=none, best=none, next=1000, rate=0.00043829, load 64=384.8 milliseconds, train=1.2 seconds, 48768 images, time remaining=5.9 hours
+763: loss=14.941, avg loss=14.422, last=none, best=none, next=1000, rate=0.00044060, load 64=324.2 milliseconds, train=1.2 seconds, 48832 images, time remaining=5.9 hours
+764: loss=12.740, avg loss=14.254, last=none, best=none, next=1000, rate=0.00044291, load 64=339.3 milliseconds, train=1.2 seconds, 48896 images, time remaining=5.9 hours
+765: loss=13.558, avg loss=14.184, last=none, best=none, next=1000, rate=0.00044523, load 64=260.3 milliseconds, train=1.2 seconds, 48960 images, time remaining=5.9 hours
+766: loss=13.683, avg loss=14.134, last=none, best=none, next=1000, rate=0.00044757, load 64=286.1 milliseconds, train=1.2 seconds, 49024 images, time remaining=5.9 hours
+767: loss=12.456, avg loss=13.966, last=none, best=none, next=1000, rate=0.00044991, load 64=369.4 milliseconds, train=1.2 seconds, 49088 images, time remaining=5.9 hours
+768: loss=13.726, avg loss=13.942, last=none, best=none, next=1000, rate=0.00045226, load 64=339.5 milliseconds, train=1.2 seconds, 49152 images, time remaining=5.9 hours
+769: loss=13.662, avg loss=13.914, last=none, best=none, next=1000, rate=0.00045462, load 64=338.8 milliseconds, train=1.2 seconds, 49216 images, time remaining=5.9 hours
+770: loss=12.993, avg loss=13.822, last=none, best=none, next=1000, rate=0.00045699, load 64=369.4 milliseconds, train=1.2 seconds, 49280 images, time remaining=5.9 hours
+Resizing, random_coef=1.40, batch=4, 928x704
+GPU #0: allocating workspace: 4.3 GiB begins at 0x14854ee00000
+771: loss=14.163, avg loss=13.856, last=none, best=none, next=1000, rate=0.00045937, load 64=313.5 milliseconds, train=2.0 seconds, 49344 images, time remaining=5.9 hours
+772: loss=15.003, avg loss=13.971, last=none, best=none, next=1000, rate=0.00046176, load 64=430.9 milliseconds, train=2.0 seconds, 49408 images, time remaining=5.9 hours
+773: loss=12.701, avg loss=13.844, last=none, best=none, next=1000, rate=0.00046415, load 64=421.1 milliseconds, train=2.0 seconds, 49472 images, time remaining=5.9 hours
+774: loss=14.845, avg loss=13.944, last=none, best=none, next=1000, rate=0.00046656, load 64=311.9 milliseconds, train=2.0 seconds, 49536 images, time remaining=5.9 hours
+775: loss=14.078, avg loss=13.957, last=none, best=none, next=1000, rate=0.00046898, load 64=390.1 milliseconds, train=2.0 seconds, 49600 images, time remaining=5.9 hours
+776: loss=12.849, avg loss=13.847, last=none, best=none, next=1000, rate=0.00047140, load 64=340.4 milliseconds, train=2.0 seconds, 49664 images, time remaining=5.9 hours
+777: loss=12.450, avg loss=13.707, last=none, best=none, next=1000, rate=0.00047384, load 64=351.2 milliseconds, train=2.0 seconds, 49728 images, time remaining=5.9 hours
+778: loss=11.799, avg loss=13.516, last=none, best=none, next=1000, rate=0.00047628, load 64=385.2 milliseconds, train=2.0 seconds, 49792 images, time remaining=5.8 hours
+779: loss=12.720, avg loss=13.437, last=none, best=none, next=1000, rate=0.00047873, load 64=330.7 milliseconds, train=2.0 seconds, 49856 images, time remaining=5.8 hours
+780: loss=13.581, avg loss=13.451, last=none, best=none, next=1000, rate=0.00048120, load 64=318.6 milliseconds, train=2.0 seconds, 49920 images, time remaining=5.8 hours
+Resizing, random_coef=1.40, batch=4, 1024x800
+GPU #0: allocating workspace: 16.6 GiB begins at 0x147ec6000000
+781: loss=12.507, avg loss=13.357, last=none, best=none, next=1000, rate=0.00048367, load 64=306.4 milliseconds, train=3.3 seconds, 49984 images, time remaining=5.8 hours
+782: loss=13.593, avg loss=13.380, last=none, best=none, next=1000, rate=0.00048615, load 64=336.0 milliseconds, train=3.3 seconds, 50048 images, time remaining=5.8 hours
+783: loss=13.811, avg loss=13.423, last=none, best=none, next=1000, rate=0.00048864, load 64=323.6 milliseconds, train=3.3 seconds, 50112 images, time remaining=5.8 hours
+784: loss=13.391, avg loss=13.420, last=none, best=none, next=1000, rate=0.00049114, load 64=650.2 milliseconds, train=3.3 seconds, 50176 images, time remaining=5.8 hours
+785: loss=12.676, avg loss=13.346, last=none, best=none, next=1000, rate=0.00049365, load 64=319.8 milliseconds, train=3.3 seconds, 50240 images, time remaining=5.8 hours
+786: loss=12.524, avg loss=13.264, last=none, best=none, next=1000, rate=0.00049617, load 64=314.4 milliseconds, train=3.3 seconds, 50304 images, time remaining=5.8 hours
+787: loss=12.085, avg loss=13.146, last=none, best=none, next=1000, rate=0.00049870, load 64=349.3 milliseconds, train=3.2 seconds, 50368 images, time remaining=5.8 hours
+788: loss=12.513, avg loss=13.082, last=none, best=none, next=1000, rate=0.00050124, load 64=291.1 milliseconds, train=3.3 seconds, 50432 images, time remaining=5.8 hours
+789: loss=13.348, avg loss=13.109, last=none, best=none, next=1000, rate=0.00050379, load 64=400.4 milliseconds, train=3.3 seconds, 50496 images, time remaining=5.8 hours
+790: loss=14.089, avg loss=13.207, last=none, best=none, next=1000, rate=0.00050635, load 64=273.9 milliseconds, train=3.3 seconds, 50560 images, time remaining=5.8 hours
+Resizing, random_coef=1.40, batch=4, 896x704
+GPU #0: allocating workspace: 4.3 GiB begins at 0x14853a200000
+791: loss=11.984, avg loss=13.085, last=none, best=none, next=1000, rate=0.00050892, load 64=349.3 milliseconds, train=1.9 seconds, 50624 images, time remaining=5.8 hours
+792: loss=13.179, avg loss=13.094, last=none, best=none, next=1000, rate=0.00051150, load 64=309.5 milliseconds, train=1.9 seconds, 50688 images, time remaining=5.8 hours
+793: loss=12.543, avg loss=13.039, last=none, best=none, next=1000, rate=0.00051409, load 64=362.9 milliseconds, train=1.9 seconds, 50752 images, time remaining=5.8 hours
+794: loss=15.542, avg loss=13.289, last=none, best=none, next=1000, rate=0.00051668, load 64=340.8 milliseconds, train=1.9 seconds, 50816 images, time remaining=5.8 hours
+795: loss=13.647, avg loss=13.325, last=none, best=none, next=1000, rate=0.00051929, load 64=385.8 milliseconds, train=1.9 seconds, 50880 images, time remaining=5.8 hours
+796: loss=11.939, avg loss=13.186, last=none, best=none, next=1000, rate=0.00052191, load 64=305.2 milliseconds, train=1.9 seconds, 50944 images, time remaining=5.8 hours
+797: loss=13.098, avg loss=13.178, last=none, best=none, next=1000, rate=0.00052454, load 64=365.1 milliseconds, train=1.9 seconds, 51008 images, time remaining=5.8 hours
+798: loss=12.164, avg loss=13.076, last=none, best=none, next=1000, rate=0.00052718, load 64=295.3 milliseconds, train=1.9 seconds, 51072 images, time remaining=5.8 hours
+799: loss=12.906, avg loss=13.059, last=none, best=none, next=1000, rate=0.00052982, load 64=318.9 milliseconds, train=1.9 seconds, 51136 images, time remaining=5.8 hours
+800: loss=12.743, avg loss=13.028, last=none, best=none, next=1000, rate=0.00053248, load 64=425.2 milliseconds, train=1.9 seconds, 51200 images, time remaining=5.8 hours
+Saving weights to /workspace/.cache/splits/combined_last.weights
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+* Errno 116: Stale file handle
+* Error location: /host_workspace/darknet/src-lib/weights.cpp, save_weights_upto(), line #251
+* Error message:  failed to open the file "/workspace/.cache/splits/combined_last.weights"
+* Thread #22672431599616: main darknet thread
+* Version "Moonlit" v5.0-158-gb0e55463 built on Jan 17 2026 15:33:39
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+backtrace (11 entries):
+1/11: /host_workspace/darknet/build/src-cli/darknet(_Z13log_backtracev+0x38) [0x555bd2191248]
+2/11: /host_workspace/darknet/build/src-cli/darknet(_Z19darknet_fatal_errorPKcS0_iS0_z+0x70e) [0x555bd21937ee]
+3/11: /host_workspace/darknet/build/src-cli/darknet(+0x20fbbc) [0x555bd2197bbc]
+4/11: /host_workspace/darknet/build/src-cli/darknet(_Z17save_weights_uptoRKN7Darknet7NetworkEPKcii+0x518) [0x555bd21a8a48]
+5/11: /host_workspace/darknet/build/src-cli/darknet(_Z23train_detector_internalbRNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEEEPKcS7_S7_PiiiiiffiiS7_+0x31b9) [0x555bd210c759]
+6/11: /host_workspace/darknet/build/src-cli/darknet(_Z14train_detectorPKcS0_S0_PiiiiiffiiS0_+0x1bb) [0x555bd210e5cb]
+7/11: /host_workspace/darknet/build/src-cli/darknet(_Z12run_detectoriPPc+0xe17) [0x555bd212e707]
+8/11: /host_workspace/darknet/build/src-cli/darknet(main+0x463) [0x555bd1fc7e53]
+9/11: /lib/x86_64-linux-gnu/libc.so.6(+0x2a1ca) [0x149f14e2a1ca]
+10/11: /lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0x8b) [0x149f14e2a28b]
+11/11: /host_workspace/darknet/build/src-cli/darknet(_start+0x25) [0x555bd1fcac05]
+
+known threads:  7
+1/7: #22658309632000: image loading loop #0
+2/7: #22658311733248: image loading loop #1
+3/7: #22658313834496: image loading loop #2
+4/7: #22658315935744: image loading loop #3
+5/7: #22658318036992: image loading loop #4
+6/7: #22658320138240: image loading loop #5
+7/7: #22672431599616: main darknet thread
+

@@ -1,0 +1,8 @@
+{
+  "backend": "darknet",
+  "weights": "/workspace/.cache/splits/LegoGears_best.weights",
+  "n_images": 14,
+  "total_s": 1.679565996862948,
+  "mean_s": 0.11996899977592486,
+  "fps": 8.335486682957892
+}

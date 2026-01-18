@@ -1,0 +1,73 @@
+Backend: darknet
+Profile: LegoGearsDarknet
+YOLO Template: yolov4-tiny
+Benchmark Time (s): 285.371
+CPU Name: INTEL(R) XEON(R) PLATINUM 8570
+CPU Threads: 112
+CPU Threads Used: 8
+GPU Name: NVIDIA B200
+GPU VRAM: 183359 MiB
+Total Memory: 2.0 TiB
+OS: Linux
+Architecture: x86_64
+Python Version: 3.12.3
+Disk Capacity: 1G, 3.5T, 3.5T, 3.5T, 3.5T, 3.5T, 3.5T, 3.5T, 3.5T, 1.7T, 1.7T
+Disk Model: Virtual SD0, KIOXIA KCMYDRUG3T84, KIOXIA KCMYDRUG3T84, KIOXIA KCMYDRUG3T84,
+  KIOXIA KCMYDRUG3T84, KIOXIA KCMYDRUG3T84, KIOXIA KCMYDRUG3T84, KIOXIA KCMYDRUG3T84,
+  KIOXIA KCMYDRUG3T84, SAMSUNG MZ1L21T9HCLS-00A07, SAMSUNG MZ1L21T9HCLS-00A07
+Write Speed: 476.01 MiB/s
+Read Speed: 1127.57 MiB/s
+Working Dir: /home/akumik/chocolatechip/semester-work/spring2025/darknet
+CUDA Version: '12.8'
+cuDNN Version: 90.7.0 (90700)
+GPUs Used: 1
+Compute Capability: '10.0'
+Input Width: 224
+Input Height: 160
+Input Size: 224x160
+Iterations: 6000
+Batch Size: 64
+Subdivisions: 1
+Train Images: 81
+Valid Images: 9
+Approx Epochs: 4740.740740740741
+Color Preset: 'off'
+Split Seed: 9001
+Training Seed: null
+Repeat: null
+Val Fraction: 0.1
+IoU (mAP): 0.5
+mAP Points: 101
+mAP (last %): 87.08
+mAP (best %): 100.0
+Best Iteration: 4600
+Conf Thresh (PRF): 0.25
+Precision@Conf: 0.88
+Recall@Conf: 0.88
+F1@Conf: 0.88
+CM_IoU_Thresh: 0.5
+CM_Conf_Thresh: 0.5
+CM_Classes: 5
+CM_TotalTP: 16
+CM_TotalFP: 1
+CM_TotalFN: 1
+CM_MicroPrecision: 0.9411764705882353
+CM_MicroRecall: 0.9411764705882353
+CM_MicroF1: 0.9411764705882353
+CM_MacroPrecision: 0.9333333333333333
+CM_MacroRecall: 0.9333333333333333
+CM_MacroF1: 0.9333333333333333
+COCO AP50-95 (%): 60.168316831683164
+COCO AP50 (%): 93.26732673267327
+COCO AP75 (%): 68.01980198019803
+COCO AP@50 (%): 93.87938793879388
+COCO AP@55 (%): 93.87938793879388
+COCO AP@60 (%): 86.45364536453646
+COCO AP@65 (%): 82.22322232223223
+COCO AP@70 (%): 82.22322232223223
+COCO AP@75 (%): 70.34203420342034
+COCO AP@80 (%): 58.100810081008106
+COCO AP@85 (%): 42.07920792079208
+COCO AP@89 (%): 7.290729072907289
+COCO AP@95 (%): 0.0
+mAP50-95 (%): 60.168316831683164
